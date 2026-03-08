@@ -56,10 +56,10 @@ const HeroSection = () => {
     setMessage(null);
     setLoading(true);
 
-    const endpoint = activeTab === "customer" ? "/customers/" : "/mechanics/";
+    const endpoint = activeTab === "customer" ? "customers/" : "mechanics/";
 
     try {
-      await api.post(endpoint, { email: email.trim(), phone_number: sanitizePhone(phoneNumber) });
+      await api.post(`/landing-page/${endpoint}`, { email: email.trim(), phone_number: sanitizePhone(phoneNumber) });
       setMessage({ type: "success", text: activeTab === "customer" ? "Inspection request sent!" : "Sign up successful!" });
       setEmailValue("");
       setPhoneNumberValue("");
