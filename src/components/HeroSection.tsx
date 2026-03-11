@@ -65,7 +65,7 @@ const HeroSection = () => {
     setMessage(null);
     setLoading(true);
 
-    const endpoint = activeTab === "customer" ? "/customers/" : "/mechanics/";
+    const endpoint = activeTab === "customer" ? "/landing-page/customers/" : "/landing-page/mechanics/";
 
     try {
       await api.post(endpoint, {
