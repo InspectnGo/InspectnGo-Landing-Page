@@ -1,52 +1,75 @@
-import { Linkedin, Twitter, Github, Youtube, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+
+const logoWhiteSrc =
+  "https://www.figma.com/api/mcp/asset/56cfa45d-ca64-4069-900b-ba5c5c5b65db";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-inner">
-        <div className="footer-top">
-          <div className="footer-brand">
-            <span className="footer-logo">InspectnGo</span>
-            <p className="footer-tagline">
-               Affordable and fast vehicle inspections done right.
+    <footer className="bg-ing-brand">
+      <div className="mx-auto flex max-w-[1184px] flex-col gap-8 px-6 py-8 md:px-8">
+        {/* Top */}
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
+          {/* Brand */}
+          <div className="flex flex-1 flex-col gap-4">
+            <div className="p-2">
+              <img
+                src={logoWhiteSrc}
+                alt="InspectnGo"
+                className="h-[26px] w-auto"
+              />
+            </div>
+            <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
+              Affordable and fast vehicle inspections done right.
             </p>
+            <a
+              href="#signup"
+              className="inline-flex w-fit items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-body hover:brightness-90 transition"
+            >
+              Sign up now
+            </a>
           </div>
 
-          <div className="footer-links">
-            <Link to="/partners" className="footer-link">Partners</Link>
-            <Link to="/about" className="footer-link">About</Link>
-            <a href="#" className="footer-link">Contact Us</a>
-          </div>
-
-          <div className="footer-socials">
-            <a href="#" className="footer-social-icon" aria-label="LinkedIn">
-              <Linkedin size={18} />
-            </a>
-            <a href="#" className="footer-social-icon" aria-label="Twitter">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="footer-social-icon" aria-label="GitHub">
-              <Github size={18} />
-            </a>
-            <a href="#" className="footer-social-icon" aria-label="YouTube">
-              <Youtube size={18} />
-            </a>
-            <a href="mailto:contact@inspectngo.com" className="footer-social-icon" aria-label="Email">
-              <Mail size={18} />
-            </a>
+          {/* Links */}
+          <div className="flex flex-1 flex-col gap-3">
+            <h3 className="font-space text-[32px] leading-none tracking-[-0.64px] text-white">
+              About us
+            </h3>
+            <Link
+              to="/partners"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Partners
+            </Link>
+            <Link
+              to="/about"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              About
+            </Link>
           </div>
         </div>
 
-        <div className="footer-divider" />
+        {/* Divider */}
+        <div className="h-px w-full bg-white/20" />
 
-        <div className="footer-bottom">
-          <p className="footer-copyright">
+        {/* Bottom */}
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
             © {new Date().getFullYear()} InspectnGo. All rights reserved.
           </p>
-          <div className="footer-bottom-links">
-            <a href="#" className="footer-bottom-link">Privacy Policy</a>
-            <a href="#" className="footer-bottom-link">Terms of Use</a>
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="font-manrope text-sm text-white hover:underline"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="#"
+              className="font-manrope text-sm text-white hover:underline"
+            >
+              Terms of Use
+            </a>
           </div>
         </div>
       </div>

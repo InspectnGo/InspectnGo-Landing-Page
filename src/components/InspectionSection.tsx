@@ -9,7 +9,7 @@ interface CarIssue {
   label: string;
   description: string;
   severity: "critical" | "warning" | "info";
-  position: [number, number, number]; // anchor point on the car
+  position: [number, number, number];
 }
 
 const ISSUES: CarIssue[] = [
@@ -23,7 +23,8 @@ const ISSUES: CarIssue[] = [
   {
     id: "front-brake",
     label: "Front Brakes",
-    description: "Brake pads are worn down to 4mm, approaching the minimum safe limit of 3mm",
+    description:
+      "Brake pads are worn down to 4mm, approaching the minimum safe limit of 3mm",
     severity: "warning",
     position: [1.6, -0.15, 0.85],
   },
@@ -61,7 +62,6 @@ const ISSUES: CarIssue[] = [
 function CarModel() {
   const group = useRef<THREE.Group>(null!);
 
-  // Blueprint‑style material
   const wireMat = useMemo(
     () =>
       new THREE.MeshBasicMaterial({
@@ -75,11 +75,14 @@ function CarModel() {
 
   const edgeMat = useMemo(
     () =>
-      new THREE.LineBasicMaterial({ color: "#1E88FF", transparent: true, opacity: 0.9 }),
+      new THREE.LineBasicMaterial({
+        color: "#1E88FF",
+        transparent: true,
+        opacity: 0.9,
+      }),
     [],
   );
 
-  // Helper: mesh + edges
   const BlueprintMesh = ({
     geometry,
     position = [0, 0, 0] as [number, number, number],
@@ -91,7 +94,10 @@ function CarModel() {
     rotation?: [number, number, number];
     scale?: [number, number, number];
   }) => {
-    const edges = useMemo(() => new THREE.EdgesGeometry(geometry, 15), [geometry]);
+    const edges = useMemo(
+      () => new THREE.EdgesGeometry(geometry, 15),
+      [geometry],
+    );
     return (
       <group position={position} rotation={rotation} scale={scale}>
         <mesh geometry={geometry} material={wireMat} />
@@ -100,7 +106,6 @@ function CarModel() {
     );
   };
 
-  // Geometries (created once)
   const bodyGeo = useMemo(() => new THREE.BoxGeometry(4.2, 0.7, 1.8), []);
   const cabinGeo = useMemo(() => new THREE.BoxGeometry(2.2, 0.7, 1.6), []);
   const hoodGeo = useMemo(() => new THREE.BoxGeometry(1.4, 0.35, 1.65), []);
@@ -109,9 +114,18 @@ function CarModel() {
     () => new THREE.TorusGeometry(0.3, 0.1, 12, 24),
     [],
   );
-  const hubGeo = useMemo(() => new THREE.CylinderGeometry(0.15, 0.15, 0.22, 16), []);
-  const bumperGeo = useMemo(() => new THREE.BoxGeometry(0.15, 0.35, 1.7), []);
-  const headlightGeo = useMemo(() => new THREE.SphereGeometry(0.12, 12, 12), []);
+  const hubGeo = useMemo(
+    () => new THREE.CylinderGeometry(0.15, 0.15, 0.22, 16),
+    [],
+  );
+  const bumperGeo = useMemo(
+    () => new THREE.BoxGeometry(0.15, 0.35, 1.7),
+    [],
+  );
+  const headlightGeo = useMemo(
+    () => new THREE.SphereGeometry(0.12, 12, 12),
+    [],
+  );
 
   const wheelPositions: [number, number, number][] = [
     [1.35, -0.25, 0.85],
@@ -122,28 +136,34 @@ function CarModel() {
 
   return (
     <group ref={group}>
-      {/* Main body */}
       <BlueprintMesh geometry={bodyGeo} position={[0, 0.15, 0]} />
-      {/* Cabin */}
       <BlueprintMesh geometry={cabinGeo} position={[0, 0.75, 0]} />
-      {/* Hood slope */}
-      <BlueprintMesh geometry={hoodGeo} position={[1.55, 0.57, 0]} rotation={[0, 0, -0.15]} />
-      {/* Trunk */}
-      <BlueprintMesh geometry={trunkGeo} position={[-1.6, 0.57, 0]} rotation={[0, 0, 0.1]} />
-      {/* Bumpers */}
+      <BlueprintMesh
+        geometry={hoodGeo}
+        position={[1.55, 0.57, 0]}
+        rotation={[0, 0, -0.15]}
+      />
+      <BlueprintMesh
+        geometry={trunkGeo}
+        position={[-1.6, 0.57, 0]}
+        rotation={[0, 0, 0.1]}
+      />
       <BlueprintMesh geometry={bumperGeo} position={[2.17, 0.05, 0]} />
       <BlueprintMesh geometry={bumperGeo} position={[-2.17, 0.05, 0]} />
-      {/* Headlights */}
       <BlueprintMesh geometry={headlightGeo} position={[2.25, 0.25, 0.55]} />
       <BlueprintMesh geometry={headlightGeo} position={[2.25, 0.25, -0.55]} />
-      {/* Tail‑lights */}
       <BlueprintMesh geometry={headlightGeo} position={[-2.25, 0.25, 0.55]} />
-      <BlueprintMesh geometry={headlightGeo} position={[-2.25, 0.25, -0.55]} />
-      {/* Wheels */}
+      <BlueprintMesh
+        geometry={headlightGeo}
+        position={[-2.25, 0.25, -0.55]}
+      />
       {wheelPositions.map((pos, i) => (
         <group key={i} position={pos}>
           <BlueprintMesh geometry={wheelGeo} />
-          <BlueprintMesh geometry={hubGeo} rotation={[Math.PI / 2, 0, 0]} />
+          <BlueprintMesh
+            geometry={hubGeo}
+            rotation={[Math.PI / 2, 0, 0]}
+          />
         </group>
       ))}
     </group>
@@ -181,14 +201,8 @@ function IssueMarker({
     ref.current.scale.setScalar(active || hovered ? s * 1.3 : s);
   });
 
-  const color =
-    issue.severity === "critical"
-      ? "#FF4444"
-      : issue.severity === "warning"
-        ? "#FFB020"
-        : "#1E88FF";
+  const color = "#00e5ff";
 
-  // Connector line from marker up to label
   const lineEnd: [number, number, number] = [
     issue.position[0],
     issue.position[1] + 1.1,
@@ -234,7 +248,7 @@ function IssueMarker({
       {/* HTML label */}
       <Html position={lineEnd} center distanceFactor={6} zIndexRange={[10, 0]}>
         <button
-          className={`blueprint-label ${active ? "blueprint-label--active" : ""}`}
+          className={`flex items-center gap-1.5 whitespace-nowrap rounded-full border border-white/20 bg-slate-900/70 px-3 py-1 text-xs font-medium text-white shadow-lg backdrop-blur-sm transition-all ${active ? "ring-2 ring-white/40 scale-110" : ""}`}
           style={{ "--marker-color": color } as React.CSSProperties}
           onPointerDown={(e) => e.stopPropagation()}
           onClick={(e) => {
@@ -242,7 +256,6 @@ function IssueMarker({
             onSelect(issue.id);
           }}
         >
-          <span className="blueprint-label-dot" style={{ background: color }} />
           {issue.label}
         </button>
       </Html>
@@ -274,17 +287,25 @@ function DetailPanel({
         : "#1E88FF";
 
   return (
-    <div className="blueprint-detail" style={{ "--marker-color": color } as React.CSSProperties}>
-      <div className="blueprint-detail-header">
-        <span className="blueprint-detail-severity" style={{ background: color }}>
+    <div className="absolute bottom-4 left-4 z-20 w-72 rounded-xl bg-white/90 p-4 shadow-lg backdrop-blur-md">
+      <div className="mb-2 flex items-center justify-between">
+        <span
+          className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
+          style={{ background: color }}
+        >
           {severityLabel}
         </span>
-        <button className="blueprint-detail-close" onClick={onClose}>
+        <button
+          className="flex h-6 w-6 items-center justify-center rounded-full text-sm text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
+          onClick={onClose}
+        >
           ✕
         </button>
       </div>
-      <h4 className="blueprint-detail-title">{issue.label}</h4>
-      <p className="blueprint-detail-desc">{issue.description}</p>
+      <h4 className="mb-1 text-sm font-bold text-ing-heading">{issue.label}</h4>
+      <p className="text-xs leading-relaxed text-ing-body">
+        {issue.description}
+      </p>
     </div>
   );
 }
@@ -310,7 +331,9 @@ function Scene({
           key={issue.id}
           issue={issue}
           active={activeId === issue.id}
-          onSelect={(id) => engaged && setActiveId(activeId === id ? null : id)}
+          onSelect={(id) =>
+            engaged && setActiveId(activeId === id ? null : id)
+          }
         />
       ))}
       <OrbitControls
@@ -327,13 +350,12 @@ function Scene({
 }
 
 /* ─── Exported section ─── */
-const CarBlueprintSection = () => {
+const InspectionSection = () => {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [engaged, setEngaged] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
   const activeIssue = ISSUES.find((i) => i.id === activeId) ?? null;
 
-  // Reset when the canvas scrolls out of view
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
@@ -350,45 +372,37 @@ const CarBlueprintSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Click outside canvas content → disengage (optional: clicking background dismisses)
   const handleEngage = useCallback(() => {
     if (!engaged) setEngaged(true);
   }, [engaged]);
 
   return (
-    <section className="blueprint-section">
-      <div className="blueprint-inner">
-        {/* Header */}
-        <div className="blueprint-header">
-          <h2 className="blueprint-title">
-            Interactive Vehicle <span className="blueprint-title-accent">Inspection</span>
+    <section className="bg-white py-16">
+      <div className="mx-auto flex max-w-[1184px] flex-col items-center gap-8 px-6 md:px-8">
+        {/* Headline */}
+        <div className="flex max-w-[736px] flex-col items-center gap-4 text-center">
+          <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
+            Vehicle Checkpoints
+          </p>
+          <h2 className="font-space text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
+            What's Included in the Inspection
           </h2>
-          <p className="blueprint-subtitle">
-            Explore a 3‑D blueprint of a vehicle and discover flagged issues. Click any marker to
-            learn more.
+          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+            From major mechanical systems to important safety features, each
+            inspection is designed to identify potential issues and give you a
+            clearer picture of the vehicle's overall health.
+          </p>
+          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+            Explore the vehicle below to see some of the key areas our mechanics
+            check during an inspection.
           </p>
         </div>
-
-        {/* Legend */}
-        <div className="blueprint-legend">
-          <span className="blueprint-legend-item">
-            <span className="blueprint-legend-dot" style={{ background: "#FF4444" }} />
-            Critical
-          </span>
-          <span className="blueprint-legend-item">
-            <span className="blueprint-legend-dot" style={{ background: "#FFB020" }} />
-            Warning
-          </span>
-          <span className="blueprint-legend-item">
-            <span className="blueprint-legend-dot" style={{ background: "#1E88FF" }} />
-            Info
-          </span>
-        </div>
-
-        {/* 3‑D Canvas */}
+        
+        {/* 3D Canvas */}
         <div
           ref={wrapRef}
-          className={`blueprint-canvas-wrap ${engaged ? "blueprint-canvas-wrap--engaged" : ""}`}
+          className={`relative w-full overflow-hidden rounded-[32px] border bg-slate-950 transition-shadow ${engaged ? "shadow-2xl ring-2 ring-blue-400/30" : "border-slate-200"}`}
+          style={{ aspectRatio: "16 / 9" }}
           onClick={handleEngage}
         >
           <Canvas
@@ -397,14 +411,26 @@ const CarBlueprintSection = () => {
             style={{ background: "transparent" }}
             onPointerMissed={() => engaged && setActiveId(null)}
           >
-            <Scene activeId={activeId} setActiveId={setActiveId} engaged={engaged} />
+            <Scene
+              activeId={activeId}
+              setActiveId={setActiveId}
+              engaged={engaged}
+            />
           </Canvas>
 
           {/* Click‑to‑interact overlay */}
           {!engaged && (
-            <div className="blueprint-overlay">
-              <div className="blueprint-overlay-content">
-                <svg className="blueprint-overlay-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <div className="absolute inset-0 z-10 flex cursor-pointer items-center justify-center bg-slate-950/40 backdrop-blur-[2px]">
+              <div className="flex flex-col items-center gap-2 text-white/80">
+                <svg
+                  className="h-10 w-10"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
                   <path d="M15 15.5V3.5a1.5 1.5 0 0 1 3 0v6" />
                   <path d="M12 15.5V2a1.5 1.5 0 0 1 3 0v3.5" />
                   <path d="M9 15.5V3.5a1.5 1.5 0 0 1 3 0" />
@@ -412,7 +438,7 @@ const CarBlueprintSection = () => {
                   <path d="M6 15.5a6 6 0 0 0 12 0v-3.5" />
                   <path d="M6 15.5a6 6 0 0 0 6 6 6 6 0 0 0 6-6" />
                 </svg>
-                <span className="blueprint-overlay-text">Click to interact</span>
+                <span className="text-sm font-medium">Click to interact</span>
               </div>
             </div>
           )}
@@ -421,7 +447,7 @@ const CarBlueprintSection = () => {
           <DetailPanel issue={activeIssue} onClose={() => setActiveId(null)} />
 
           {/* Hint */}
-          <p className="blueprint-hint">
+          <p className="absolute bottom-2 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap text-xs text-white/50">
             {engaged
               ? "Drag to rotate · Scroll to zoom · Click a marker for details"
               : "Click anywhere to start exploring"}
@@ -432,4 +458,4 @@ const CarBlueprintSection = () => {
   );
 };
 
-export default CarBlueprintSection;
+export default InspectionSection;

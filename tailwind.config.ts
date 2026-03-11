@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -13,7 +18,24 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+        space: ["Space Grotesk", "sans-serif"],
+      },
       colors: {
+        /* Figma design tokens */
+        ing: {
+          neutral: "#f8fafc",
+          base: "#ffffff",
+          brand: "#5c6d83",
+          accent: "#00e5ff",
+          heading: "#0f172a",
+          body: "#5c6d83",
+          placeholder: "#8797a9",
+          border: "#a3abb9",
+          "btn-active": "#445060",
+        },
+        /* shadcn compat */
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -47,14 +69,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        cta: {
-          DEFAULT: "hsl(var(--cta))",
-          foreground: "hsl(var(--cta-foreground))",
-        },
-        navy: {
-          DEFAULT: "hsl(var(--navy))",
-          foreground: "hsl(var(--navy-foreground))",
-        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -71,22 +85,17 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      boxShadow: {
+        card: "0px 8px 24px 0px rgba(92,109,131,0.08)",
+      },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {

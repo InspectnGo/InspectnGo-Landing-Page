@@ -1,27 +1,25 @@
 import Navbar from "@/components/Navbar";
-import HeroHeader from "@/components/HeroHeader";
 import HeroSection from "@/components/HeroSection";
-import CarBlueprintSection from "@/components/CarBlueprintSection";
-import PartnerSection from "@/components/PartnerSection";
-import InfoStatsSection from "@/components/InfoStatsSection";
-import VintageVsNewSection from "@/components/VintageVsNewSection";
+import StatsSection from "@/components/StatsSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import InspectionSection from "@/components/InspectionSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import FAQSection from "@/components/FAQSection";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-background overflow-hidden">
+    <div className="flex min-h-screen flex-col bg-ing-neutral">
       <Navbar />
       <main className="flex-1">
-        <HeroHeader />
-        <div className="hero-card">
-          <div className="hero-card-inner">
-            <HeroSection />
-          </div>
-        </div>
-        <CarBlueprintSection />
-        <PartnerSection />
-        <InfoStatsSection />
-        <VintageVsNewSection />
+        <HeroSection />
+        <StatsSection />
+        <FeaturesSection />
+        <InspectionSection />
+        <HowItWorksSection />
+        <FAQSection />
+        <CTASection />
       </main>
       <Footer />
     </div>
