@@ -10,7 +10,10 @@ const HeroSection = () => {
   const [phoneNumber, setPhoneNumberValue] = useState("");
   const [consent, setConsent] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [emailError, setEmailError] = useState<string | null>(null);
+  const [phoneError, setPhoneError] = useState<string | null>(null);
+  const [consentError, setConsentError] = useState<string | null>(null);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const [honeypot, setHoneypot] = useState("");
 
   /**
@@ -41,28 +44,35 @@ const HeroSection = () => {
   const handleSubmit = async () => {
     // Honeypot: if a bot filled in the hidden field, silently bail out
     if (honeypot) {
-      setMessage({
+      setSubmitStatus({
         type: "success",
         text: activeTab === "customer" ? "Inspection request sent!" : "Sign up successful!",
       });
       return;
     }
 
-    // --- Client-side validation (matches server schemas) ---
+    // --- Client-side validation (collect all errors at once) ---
+    let hasError = false;
+    setEmailError(null);
+    setPhoneError(null);
+    setConsentError(null);
+    setSubmitStatus(null);
+
     if (!isValidEmail(email)) {
-      setMessage({ type: "error", text: "Please enter a valid email address" });
-      return;
+      setEmailError("Please enter a valid email address");
+      hasError = true;
     }
     if (!isValidPhone(phoneNumber)) {
-      setMessage({ type: "error", text: "Please enter a valid phone number (7-15 digits, optional leading '+')" });
-      return;
+      setPhoneError("Please enter a valid phone number (7-15 digits, optional leading '+')");
+      hasError = true;
     }
     if (!consent) {
-      setMessage({ type: "error", text: "Please agree to the terms before continuing" });
-      return;
+      setConsentError("Please agree to the terms before continuing");
+      hasError = true;
     }
 
-    setMessage(null);
+    if (hasError) return;
+
     setLoading(true);
 
     const endpoint = activeTab === "customer" ? "/customers/" : "/mechanics/";
@@ -72,7 +82,7 @@ const HeroSection = () => {
         email: email.trim(),
         phone_number: sanitizePhone(phoneNumber),
       });
-      setMessage({
+      setSubmitStatus({
         type: "success",
         text: activeTab === "customer" ? "Inspection request sent!" : "Sign up successful!",
       });
@@ -80,7 +90,7 @@ const HeroSection = () => {
       setPhoneNumberValue("");
       setConsent(false);
     } catch (err) {
-      setMessage({
+      setSubmitStatus({
         type: "error",
         text: err instanceof Error ? err.message : "Something went wrong",
       });
@@ -161,9 +171,19 @@ const HeroSection = () => {
                 type="email"
                 placeholder="inspectngo@gmail.com"
                 value={email}
-                onChange={(e) => setEmailValue(e.target.value)}
-                className="h-14 rounded-lg border border-ing-border px-4 font-manrope text-base tracking-[-0.24px] text-ing-heading placeholder:text-ing-placeholder focus:outline-none focus:ring-2 focus:ring-ing-accent"
+                onChange={(e) => {
+                  setEmailValue(e.target.value);
+                  if (emailError) setEmailError(null);
+                }}
+                className={`h-14 rounded-lg border px-4 font-manrope text-base tracking-[-0.24px] text-ing-heading placeholder:text-ing-placeholder focus:outline-none focus:ring-2 focus:ring-ing-accent ${
+                  emailError ? "border-red-500" : "border-ing-border"
+                }`}
               />
+              {emailError && (
+                <p className="font-manrope text-sm tracking-[-0.24px] text-red-500">
+                  {emailError}
+                </p>
+              )}
             </div>
 
             <div className="flex flex-col gap-2">
@@ -174,20 +194,63 @@ const HeroSection = () => {
                 type="tel"
                 placeholder="Mobile number"
                 value={phoneNumber}
-                onChange={(e) => setPhoneNumberValue(e.target.value)}
-                className="h-14 rounded-lg border border-ing-border px-4 font-manrope text-base tracking-[-0.24px] text-ing-heading placeholder:text-ing-placeholder focus:outline-none focus:ring-2 focus:ring-ing-accent"
+                onChange={(e) => {
+                  setPhoneNumberValue(e.target.value);
+                  if (phoneError) setPhoneError(null);
+                }}
+                className={`h-14 rounded-lg border px-4 font-manrope text-base tracking-[-0.24px] text-ing-heading placeholder:text-ing-placeholder focus:outline-none focus:ring-2 focus:ring-ing-accent ${
+                  phoneError ? "border-red-500" : "border-ing-border"
+                }`}
               />
+              {phoneError && (
+                <p className="font-manrope text-sm tracking-[-0.24px] text-red-500">
+                  {phoneError}
+                </p>
+              )}
             </div>
 
             {/* Checkbox */}
-            <label className="flex items-start gap-3 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                className="mt-0.5 h-6 w-6 shrink-0 rounded-lg border-ing-border accent-ing-accent"
-              />
-              <span className="font-manrope text-sm leading-[18px] tracking-[-0.24px] text-ing-body">
+            <div className="flex flex-col gap-2">
+              <label className="flex items-start gap-3 cursor-pointer">
+                <span
+                  role="checkbox"
+                  aria-checked={consent}
+                  tabIndex={0}
+                  onClick={() => {
+                    setConsent(!consent);
+                    if (consentError) setConsentError(null);
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === " " || e.key === "Enter") {
+                      e.preventDefault();
+                      setConsent(!consent);
+                      if (consentError) setConsentError(null);
+                    }
+                  }}
+                  className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded border-2 transition ${
+                    consent
+                      ? "border-ing-brand bg-ing-brand"
+                      : consentError
+                        ? "border-red-500 bg-white"
+                        : "border-ing-border bg-white"
+                  }`}
+                >
+                  {consent && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#00e5ff"
+                      strokeWidth={3}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-4 w-4"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  )}
+                </span>
+                <span className="font-manrope text-sm leading-[18px] tracking-[-0.24px] text-ing-body">
                 I agree to the{" "}
                 <Link
                   to="/terms"
@@ -203,19 +266,14 @@ const HeroSection = () => {
                   Privacy Policy
                 </Link>
                 {" "}and consent to receive emails and text messages from InspectnGo.
-              </span>
-            </label>
-
-            {/* Status message */}
-            {message && (
-              <p
-                className={`font-manrope text-sm tracking-[-0.24px] ${
-                  message.type === "success" ? "text-green-600" : "text-red-500"
-                }`}
-              >
-                {message.text}
-              </p>
-            )}
+                </span>
+              </label>
+              {consentError && (
+                <p className="font-manrope text-sm tracking-[-0.24px] text-red-500">
+                  {consentError}
+                </p>
+              )}
+            </div>
 
             <button
               onClick={handleSubmit}
@@ -228,6 +286,17 @@ const HeroSection = () => {
                   ? "Get inspection"
                   : "Sign up"}
             </button>
+
+            {/* Submission status */}
+            {submitStatus && (
+              <p
+                className={`font-manrope text-sm tracking-[-0.24px] text-center ${
+                  submitStatus.type === "success" ? "text-green-600" : "text-red-500"
+                }`}
+              >
+                {submitStatus.text}
+              </p>
+            )}
           </div>
         </div>
       </div>
