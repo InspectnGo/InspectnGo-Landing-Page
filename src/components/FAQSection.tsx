@@ -39,7 +39,7 @@ const faqItems = [
   {
     question: "How much does an inspection cost?",
     answer:
-      "Our inspections are $250 (with CARFAX) $220 (without CARFAX), which is in line with the market rate for professional pre-purchase inspections. With InspectnGo, you also get the added convenience of on-site service, no long shop appointment wait times, a faster turnaround, and a detailed report sent directly to you. Our packages also include a CARFAX report, giving you both the mechanical condition and vehicle history in one place to help you make a confident purchase decision."
+      "Our inspections are $250 (with CARFAX) $220 (without CARFAX), which is in line with the market rate for professional pre-purchase inspections. With InspectnGo, you also get the added convenience of on-site service, no long shop appointment wait times, a faster turnaround, and a detailed report sent directly to you."
   },
 ];
 
