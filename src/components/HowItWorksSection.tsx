@@ -29,11 +29,11 @@ const HowItWorksSection = () => {
     <section className="bg-ing-neutral py-16">
       <div className="mx-auto flex max-w-[1184px] flex-col-reverse gap-8 px-6 md:px-8 lg:flex-row lg:items-start">
         {/* Image */}
-        <div className="flex-1 overflow-hidden rounded-2xl">
+        <div className="flex-1 overflow-hidden rounded-2xl lg:self-stretch">
           <img
             src={mechanicImg}
             alt="Mechanic performing vehicle inspection"
-            className="h-auto w-full object-cover aspect-[2/3] lg:max-h-[600px]"
+            className="h-full w-full object-cover aspect-[2/3] lg:aspect-auto"
           />
         </div>
 
