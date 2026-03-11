@@ -129,10 +129,10 @@ const PrivacyPolicy = () => {
             InspectnGO
             <br />
             <a
-              href="mailto:InspectnGO@gmail.com"
+              href="mailto:inspectngo@gmail.com"
               className="underline text-ing-accent hover:brightness-90"
             >
-              InspectnGO@gmail.com
+              inspectngo@gmail.com
             </a>
             <br />
             <a
