@@ -14,12 +14,12 @@ const faqItems = [
   {
     question: "Do I need to bring the vehicle to a shop?",
     answer:
-      "No — you don’t need to bring the vehicle to a shop. InspectnGO mechanics travel directly to the vehicle’s location, whether it’s at a private seller’s home, a dealership lot, or a parking area, and complete the inspection on-site."
+      "No — you don’t need to bring the vehicle to a shop. InspectnGo mechanics travel directly to the vehicle’s location, whether it’s at a private seller’s home, a dealership lot, or a parking area, and complete the inspection on-site."
   },
   {
     question: "How long does an inspection take?",
     answer:
-      "According to standard dealership book time, the inspection typically takes about 0.8 hours. However, InspectnGO allocates a full hour for our mechanics to complete the inspection, ensuring they have adequate time to perform a thorough and accurate assessment of the vehicle."
+      "According to standard dealership book time, the inspection typically takes about 0.8 hours. However, InspectnGo allocates a full hour for our mechanics to complete the inspection, ensuring they have adequate time to perform a thorough and accurate assessment of the vehicle."
   },
   {
     question: "When will I receive the inspection report?",
@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Are your mechanics certified?",
     answer:
-      "InspectnGO works with certified and experienced automotive technicians. Our inspectors typically have formal training, industry certifications, or years of professional shop experience performing mechanical diagnostics and inspections. Many technicians in Canada complete a four-year apprenticeship and may hold a Certificate of Qualification or Red Seal endorsement, which demonstrates a nation-wide recognized level of skill in the trade."
+      "InspectnGo works with certified and experienced automotive technicians. Our inspectors typically have formal training, industry certifications, or years of professional shop experience performing mechanical diagnostics and inspections. Many technicians in Canada complete a four-year apprenticeship and may hold a Certificate of Qualification or Red Seal endorsement, which demonstrates a nation-wide recognized level of skill in the trade."
   },
   {
     question: "Can I use this service for a vehicle from a private seller?",

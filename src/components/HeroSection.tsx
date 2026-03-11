@@ -202,7 +202,7 @@ const HeroSection = () => {
                 >
                   Privacy Policy
                 </Link>
-                {" "}and consent to receive emails and text messages from InspectnGO.
+                {" "}and consent to receive emails and text messages from InspectnGo.
               </span>
             </label>
 

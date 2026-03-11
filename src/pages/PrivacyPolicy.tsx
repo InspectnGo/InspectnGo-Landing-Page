@@ -101,7 +101,7 @@ const PrivacyPolicy = () => {
               policy
             </li>
             <li>
-              Being contacted by InspectnGO regarding your booking or service
+              Being contacted by InspectnGo regarding your booking or service
               request
             </li>
           </ul>
@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
             If you have questions regarding this Privacy Policy, please contact:
           </p>
           <address className="mt-3 font-manrope text-base not-italic leading-relaxed text-ing-body">
-            InspectnGO
+            InspectnGo
             <br />
             <a
               href="mailto:inspectngo@gmail.com"
