@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { api } from "@/lib/api";
 
 type Tab = "customer" | "mechanic";
@@ -187,9 +188,21 @@ const HeroSection = () => {
                 className="mt-0.5 h-6 w-6 shrink-0 rounded-lg border-ing-border accent-ing-accent"
               />
               <span className="font-manrope text-sm leading-[18px] tracking-[-0.24px] text-ing-body">
-                By signing up with your email address and phone number, you
-                consent to receive email and messages from InspectnGO. Read
-                Terms and Use.
+                I agree to the{" "}
+                <Link
+                  to="/terms"
+                  className="underline text-ing-accent hover:brightness-90"
+                >
+                  Terms of Use
+                </Link>
+                {" "}and{" "} 
+                <Link
+                  to="/privacy"
+                  className="underline text-ing-accent hover:brightness-90"
+                >
+                  Privacy Policy
+                </Link>
+                {" "}and consent to receive emails and text messages from InspectnGO.
               </span>
             </label>
 

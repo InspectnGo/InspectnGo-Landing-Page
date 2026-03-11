@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 
-const logoWhiteSrc =
-  "https://www.figma.com/api/mcp/asset/56cfa45d-ca64-4069-900b-ba5c5c5b65db";
-
 const Footer = () => {
   return (
     <footer className="bg-ing-brand">
@@ -11,12 +8,8 @@ const Footer = () => {
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           {/* Brand */}
           <div className="flex flex-1 flex-col gap-4">
-            <div className="p-2">
-              <img
-                src={logoWhiteSrc}
-                alt="InspectnGo"
-                className="h-[26px] w-auto"
-              />
+            <div className="p-2 font-sans text-3xl font-bold tracking-tight text-white">
+              InspectnGo
             </div>
             <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
               Affordable and fast vehicle inspections done right.
@@ -58,18 +51,18 @@ const Footer = () => {
             © {new Date().getFullYear()} InspectnGo. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <a
-              href="#"
+            <Link
+              to="/privacy"
               className="font-manrope text-sm text-white hover:underline"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/terms"
               className="font-manrope text-sm text-white hover:underline"
             >
               Terms of Use
-            </a>
+            </Link>
           </div>
         </div>
       </div>

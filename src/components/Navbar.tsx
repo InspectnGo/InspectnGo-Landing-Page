@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-const logoSrc =
-  "https://www.figma.com/api/mcp/asset/241099b8-ad57-45c9-99ed-f9cb1fb24ab1";
-
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -12,8 +9,8 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-white shadow-card py-4">
       <div className="mx-auto flex max-w-[1184px] items-center justify-between px-6 md:px-8">
         {/* Logo */}
-        <Link to="/" className="shrink-0 p-2">
-          <img src={logoSrc} alt="InspectnGo" className="h-[26px] w-auto" />
+        <Link to="/" className="shrink-0 p-2 font-sans text-3xl font-bold tracking-tight text-ing-heading">
+          InspectnGo
         </Link>
 
         {/* Desktop nav */}
