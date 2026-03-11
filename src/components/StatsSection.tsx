@@ -1,26 +1,51 @@
+import { useEffect, useRef, useState } from "react";
+import { useCountUp } from "@/hooks/useCountUp";
+
 interface StatCardProps {
   stat: string;
   subHeading: string;
   description: string;
+  inView: boolean;
 }
 
-const StatCard = ({ stat, subHeading, description }: StatCardProps) => (
-  <div className="flex flex-1 flex-col items-center gap-[18px] rounded-2xl border border-ing-border bg-white px-6 py-8 text-center shadow-card min-w-[200px]">
-    <p className="font-space text-[48px] leading-none tracking-[-0.64px] text-ing-body">
-      {stat}
-    </p>
-    <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-heading">
-      {subHeading}
-    </p>
-    <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
-      {description}
-    </p>
-  </div>
-);
+const StatCard = ({ stat, subHeading, description, inView }: StatCardProps) => {
+  const animatedValue = useCountUp(stat, inView);
+
+  return (
+    <div className="flex flex-1 flex-col items-center gap-[18px] rounded-2xl border border-ing-border bg-white px-6 py-8 text-center shadow-card min-w-[200px]">
+      <p className="font-space text-[48px] leading-none tracking-[-0.64px] text-ing-body">
+        {animatedValue}
+      </p>
+      <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-heading">
+        {subHeading}
+      </p>
+      <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+        {description}
+      </p>
+    </div>
+  );
+};
 
 const StatsSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 },
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16" ref={sectionRef}>
       <div className="mx-auto flex max-w-[1184px] flex-col items-center gap-8 px-6 md:px-8">
         {/* Headline */}
         <div className="flex max-w-[736px] flex-col items-center gap-4 text-center">
@@ -44,16 +69,19 @@ const StatsSection = () => {
             stat="40M+"
             subHeading="Used Cars Sold Yearly"
             description="Over 40 million used vehicles change hands each year in North America"
+            inView={inView}
           />
           <StatCard
             stat="1 in 6"
             subHeading="Have Hidden Damage"
             description="Roughly 1 in 6 used vehicles carry undisclosed mechanical or structural issues"
+            inView={inView}
           />
           <StatCard
             stat="$600"
             subHeading="Average Repair Surprise"
             description="Buyers who skip an inspection spend an average of $600 on unexpected"
+            inView={inView}
           />
         </div>
 
