@@ -13,7 +13,7 @@ interface StepCardProps {
 const StepCard = ({ icon: Icon, heading, body }: StepCardProps) => (
   <div className="flex flex-col items-start gap-4">
     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-ing-brand">
-      <Icon size={24} className="text-white" />
+      <Icon size={24} className="text-ing-accent" />
     </div>
     <h3 className="font-space text-2xl leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
       {heading}
