@@ -12,7 +12,7 @@ const StatCard = ({ stat, subHeading, description, inView }: StatCardProps) => {
   const animatedValue = useCountUp(stat, inView);
 
   return (
-    <div className="flex flex-1 flex-col items-center gap-[18px] rounded-2xl border border-ing-border bg-white px-6 py-8 text-center shadow-card min-w-[200px]">
+    <div className="flex flex-1 flex-col items-center gap-[18px] rounded-2xl border border-ing-border bg-white px-6 py-8 text-center shadow-form min-w-[200px]">
       <p className="font-space text-[48px] leading-none tracking-[-0.64px] text-ing-body">
         {animatedValue}
       </p>

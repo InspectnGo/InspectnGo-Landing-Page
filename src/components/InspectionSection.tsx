@@ -8,7 +8,6 @@ interface CarIssue {
   id: string;
   label: string;
   description: string;
-  severity: "critical" | "warning" | "info";
   position: [number, number, number];
 }
 
@@ -16,44 +15,38 @@ const ISSUES: CarIssue[] = [
   {
     id: "engine",
     label: "Engine",
-    description: "Overheating — coolant leak detected",
-    severity: "critical",
+    description: "The engine is inspected for visible leaks, unusual noises, and signs of wear or damage. Mechanics also check key components that affect overall engine performance and reliability.",
     position: [1.5, 0.55, 0],
   },
   {
     id: "front-brake",
     label: "Front Brakes",
     description:
-      "Brake pads are worn down to 4mm, approaching the minimum safe limit of 3mm",
-    severity: "warning",
+      "Front brake components are examined for wear, responsiveness, and overall condition to ensure the vehicle can stop safely and effectively.",
     position: [1.6, -0.15, 0.85],
   },
   {
     id: "rear-tire",
     label: "Rear Left Tire",
-    description: "Tread depth below safe limit",
-    severity: "critical",
+    description: "Tires are inspected for tread depth, uneven wear, and visible damage that may indicate alignment or suspension issues.",
     position: [-1.5, -0.15, 0.85],
   },
   {
     id: "transmission",
     label: "Transmission",
-    description: "Minor vibration at high RPM",
-    severity: "warning",
+    description: "The transmission system is checked for proper operation and potential issues such as leaks, rough shifting, or signs of mechanical wear.",
     position: [0.3, 0.1, 0],
   },
   {
     id: "exhaust",
     label: "Exhaust System",
-    description: "Emissions slightly above threshold",
-    severity: "info",
+    description: "The exhaust system is checked for leaks, rust, or damage that could affect emissions, performance, or noise levels.",
     position: [-2.2, -0.1, 0],
   },
   {
     id: "headlight",
     label: "Right Headlight",
-    description: "LED module flickering intermittently",
-    severity: "info",
+    description: "Headlights are inspected to ensure they are functioning correctly, properly aligned, and free from visible damage that could affect visibility and safety.",
     position: [2.35, 0.35, -0.55],
   },
 ];
@@ -273,36 +266,17 @@ function DetailPanel({
 }) {
   if (!issue) return null;
 
-  const severityLabel =
-    issue.severity === "critical"
-      ? "Critical"
-      : issue.severity === "warning"
-        ? "Warning"
-        : "Info";
-  const color =
-    issue.severity === "critical"
-      ? "#FF4444"
-      : issue.severity === "warning"
-        ? "#FFB020"
-        : "#1E88FF";
-
   return (
     <div className="absolute bottom-4 left-4 z-20 w-72 rounded-xl bg-white/90 p-4 shadow-lg backdrop-blur-md">
       <div className="mb-2 flex items-center justify-between">
-        <span
-          className="rounded-full px-2.5 py-0.5 text-xs font-semibold text-white"
-          style={{ background: color }}
-        >
-          {severityLabel}
-        </span>
+        <h4 className="text-sm font-bold text-ing-heading">{issue.label}</h4>
         <button
-          className="flex h-6 w-6 items-center justify-center rounded-full text-sm text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
+          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
           onClick={onClose}
         >
           ✕
         </button>
       </div>
-      <h4 className="mb-1 text-sm font-bold text-ing-heading">{issue.label}</h4>
       <p className="text-xs leading-relaxed text-ing-body">
         {issue.description}
       </p>

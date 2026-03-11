@@ -111,7 +111,7 @@ const HeroSection = () => {
         {/* Right — sign-up form */}
         <div
           id="signup"
-          className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-card sm:p-8 lg:flex-1"
+          className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-form sm:p-8 lg:flex-1"
         >
           {/* Segmented control */}
           <div className="flex self-center rounded-full bg-ing-neutral p-2">
@@ -119,7 +119,7 @@ const HeroSection = () => {
               onClick={() => setActiveTab("customer")}
               className={`rounded-full px-4 py-3 font-manrope text-base font-bold tracking-[-0.24px] transition ${
                 activeTab === "customer"
-                  ? "bg-white text-ing-btn-active shadow-card"
+                  ? "bg-white text-ing-btn-active shadow-form"
                   : "text-ing-body"
               }`}
             >
@@ -129,7 +129,7 @@ const HeroSection = () => {
               onClick={() => setActiveTab("mechanic")}
               className={`rounded-full px-4 py-3 font-manrope text-base font-bold tracking-[-0.24px] transition ${
                 activeTab === "mechanic"
-                  ? "bg-white text-ing-btn-active shadow-card"
+                  ? "bg-white text-ing-btn-active shadow-form"
                   : "text-ing-body"
               }`}
             >

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white shadow-card py-4">
+    <nav className="sticky top-0 z-50 w-full bg-white shadow-form py-4">
       <div className="mx-auto flex max-w-[1184px] items-center justify-between px-6 md:px-8">
         {/* Logo */}
         <Link to="/" className="shrink-0 p-2 font-sans text-3xl font-bold tracking-tight text-ing-heading">

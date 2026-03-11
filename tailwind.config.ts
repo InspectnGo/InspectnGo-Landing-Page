@@ -86,7 +86,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        card: "0px 8px 24px 0px rgba(92,109,131,0.08)",
+        form: "0px 8px 24px 0px rgba(92,109,131,0.08)",
       },
       keyframes: {
         "accordion-down": {
