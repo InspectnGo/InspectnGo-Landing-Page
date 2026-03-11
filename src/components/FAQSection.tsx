@@ -9,37 +9,37 @@ const faqItems = [
   {
     question: "What does the inspection include?",
     answer:
-      "Our inspection covers key mechanical systems, the vehicle's exterior and interior condition, safety components, fluids, tires, brakes, suspension, and more. You'll receive a structured report detailing each area.",
+      "An InspectnGo inspection includes a comprehensive check of the vehicle’s major components. Our mechanics review the engine, transmission, brakes, suspension, tires, fluids, and visible leaks, Scanning of the ECU (if there’s a DTC), along with a visual check of the exterior and interior."
   },
   {
     question: "Do I need to bring the vehicle to a shop?",
     answer:
-      "No. Our certified mechanics come directly to the vehicle's location—whether it's at a home, workplace, or parking lot—so you don't have to arrange transport.",
+      "No — you don’t need to bring the vehicle to a shop. InspectnGO mechanics travel directly to the vehicle’s location, whether it’s at a private seller’s home, a dealership lot, or a parking area, and complete the inspection on-site."
   },
   {
     question: "How long does an inspection take?",
     answer:
-      "A typical inspection takes approximately 45–60 minutes, depending on the vehicle's condition and accessibility.",
+      "According to standard dealership book time, the inspection typically takes about 0.8 hours. However, InspectnGO allocates a full hour for our mechanics to complete the inspection, ensuring they have adequate time to perform a thorough and accurate assessment of the vehicle."
   },
   {
     question: "When will I receive the inspection report?",
     answer:
-      "You'll receive your detailed inspection report within 24 hours of the completed inspection, delivered directly to your email.",
+      "You should receive the inspection report shortly after the mechanic completes the inspection. Once the report is finalized, it will be scanned and emailed directly to you. If you purchased a package that includes it, the CARFAX report will be included in the same email."
   },
   {
     question: "Are your mechanics certified?",
     answer:
-      "Yes. All mechanics on our platform are certified professionals with experience in pre-purchase vehicle inspections.",
+      "InspectnGO works with certified and experienced automotive technicians. Our inspectors typically have formal training, industry certifications, or years of professional shop experience performing mechanical diagnostics and inspections. Many technicians in Canada complete a four-year apprenticeship and may hold a Certificate of Qualification or Red Seal endorsement, which demonstrates a nation-wide recognized level of skill in the trade."
   },
   {
     question: "Can I use this service for a vehicle from a private seller?",
     answer:
-      "Absolutely. Our service is designed for both private and dealer vehicle purchases. Simply provide the vehicle's location and we'll handle the rest.",
+      "InspectnGo can inspect vehicles from private sellers. Our certified mechanics come directly to the vehicle’s location (a driveway, parking lot, or seller’s home) and perform a full pre-purchase inspection before you buy."
   },
   {
     question: "How much does an inspection cost?",
     answer:
-      "Pricing depends on the type of vehicle and location. Visit our booking page or contact us for a detailed quote tailored to your needs.",
+      "Our inspections are $250 (with CARFAX) $220 (without CARFAX), which is in line with the market rate for professional pre-purchase inspections. With InspectnGo, you also get the added convenience of on-site service, no long shop appointment wait times, a faster turnaround, and a detailed report sent directly to you. Our packages also include a CARFAX report, giving you both the mechanical condition and vehicle history in one place to help you make a confident purchase decision."
   },
 ];
 
