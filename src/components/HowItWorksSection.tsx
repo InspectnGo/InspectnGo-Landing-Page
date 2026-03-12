@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
           {/* Headline */}
           <div className="flex flex-col gap-4">
             <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
-              How to use InspectnGo
+              How to use InspectnGO
             </p>
             <h2 className="font-space text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
               Book a professional vehicle inspection in a minute

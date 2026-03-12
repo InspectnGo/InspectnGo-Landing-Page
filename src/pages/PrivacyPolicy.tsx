@@ -8,14 +8,14 @@ const PrivacyPolicy = () => {
       <main className="flex-1">
         <section className="mx-auto max-w-3xl px-6 py-16 md:px-8">
           <h1 className="font-manrope text-3xl font-bold tracking-tight text-ing-accent md:text-4xl">
-            InspectnGo – Privacy Policy
+            InspectnGO – Privacy Policy
           </h1>
           <p className="mt-2 font-manrope text-sm text-ing-body">
             Effective Date as of: March 10th, 2026
           </p>
 
           <p className="mt-8 font-manrope text-base leading-relaxed text-ing-body">
-            InspectnGo respects your privacy and is committed to protecting your
+            InspectnGO respects your privacy and is committed to protecting your
             personal information.
           </p>
 
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
             4. Data Security
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
-            InspectnGo takes reasonable steps to protect your information from
+            InspectnGO takes reasonable steps to protect your information from
             unauthorized access, loss, or misuse.
           </p>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
             5. Consent
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
-            By submitting your information through the InspectnGo website, you
+            By submitting your information through the InspectnGO website, you
             consent to:
           </p>
           <ul className="mt-2 list-disc space-y-1 pl-6 font-manrope text-base leading-relaxed text-ing-body">
@@ -101,7 +101,7 @@ const PrivacyPolicy = () => {
               policy
             </li>
             <li>
-              Being contacted by InspectnGo regarding your booking or service
+              Being contacted by InspectnGO regarding your booking or service
               request
             </li>
           </ul>
@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
             If you have questions regarding this Privacy Policy, please contact:
           </p>
           <address className="mt-3 font-manrope text-base not-italic leading-relaxed text-ing-body">
-            InspectnGo
+            InspectnGO
             <br />
             <a
               href="mailto:inspectngo@gmail.com"

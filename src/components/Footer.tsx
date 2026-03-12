@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="flex flex-1 flex-col gap-4">
             <div className="p-2 font-sans text-3xl font-bold tracking-tight text-white">
-              InspectnGo
+              InspectnGO
             </div>
             <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
               Affordable and fast vehicle inspections done right.
@@ -48,7 +48,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
-            © {new Date().getFullYear()} InspectnGo. All rights reserved.
+            © {new Date().getFullYear()} InspectnGO. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link

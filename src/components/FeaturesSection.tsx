@@ -34,7 +34,7 @@ const FeaturesSection = () => {
             Fast, reliable vehicle inspections
           </h2>
           <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
-            Buying a used vehicle can be uncertain. InspectnGo helps you make
+            Buying a used vehicle can be uncertain. InspectnGO helps you make
             confident decisions by connecting you with trusted mechanics who
             provide fast, reliable inspections before you commit to a purchase.
           </p>

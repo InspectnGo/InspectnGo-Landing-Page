@@ -265,7 +265,7 @@ const HeroSection = () => {
                 >
                   Privacy Policy
                 </Link>
-                {" "}and consent to receive emails and text messages from InspectnGo.
+                {" "}and consent to receive emails and text messages from InspectnGO.
                 </span>
               </label>
               {consentError && (
