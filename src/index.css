@@ -37,6 +37,9 @@
 
     --radius: 0.5rem;
 
+    /* Font */
+    --font-heading: "Manrope", sans-serif;
+
     /* Sidebar */
     --sidebar-background: #f8fafc;
     --sidebar-foreground: #445060;  /* button/button-primary-active */

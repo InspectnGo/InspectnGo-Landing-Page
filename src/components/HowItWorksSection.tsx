@@ -15,7 +15,7 @@ const StepCard = ({ icon: Icon, heading, body }: StepCardProps) => (
     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-ing-brand">
       <Icon size={24} className="text-ing-accent" />
     </div>
-    <h3 className="font-space text-2xl leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
+    <h3 className="font-heading text-2xl leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
       {heading}
     </h3>
     <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
@@ -44,7 +44,7 @@ const HowItWorksSection = () => {
             <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
               How to use InspectnGO
             </p>
-            <h2 className="font-space text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
+            <h2 className="font-heading text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
               Book a professional vehicle inspection in a minute
             </h2>
           </div>

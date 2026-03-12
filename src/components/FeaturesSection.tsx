@@ -12,7 +12,7 @@ const FeatureCard = ({ icon: Icon, heading, body }: FeatureCardProps) => (
     <div className="flex h-14 w-14 items-center justify-center rounded-full bg-ing-brand">
       <Icon size={24} className="text-ing-accent" />
     </div>
-    <h3 className="font-space text-2xl leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
+    <h3 className="font-heading text-2xl leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
       {heading}
     </h3>
     <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             What we offer
           </p>
-          <h2 className="font-space text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
             Fast, reliable vehicle inspections
           </h2>
           <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">

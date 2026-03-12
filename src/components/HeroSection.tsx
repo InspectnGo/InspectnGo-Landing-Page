@@ -107,7 +107,7 @@ const HeroSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             Recognized by SkillTrades BC and CARFAX
           </p>
-          <h1 className="font-space text-4xl tracking-[-0.64px] text-ing-heading sm:text-5xl lg:text-[64px] lg:leading-none">
+          <h1 className="font-heading text-4xl tracking-[-0.64px] text-ing-heading sm:text-5xl lg:text-[64px] lg:leading-none">
             Affordable and fast vehicle inspections done{" "}
             <span className="text-ing-accent">right</span>.
           </h1>

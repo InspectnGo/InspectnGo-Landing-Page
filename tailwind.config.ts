@@ -21,6 +21,7 @@ export default {
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],
         space: ["Space Grotesk", "sans-serif"],
+        heading: ["var(--font-heading)"],
       },
       colors: {
         /* Figma design tokens */
