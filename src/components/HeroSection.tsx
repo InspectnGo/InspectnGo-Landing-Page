@@ -84,7 +84,7 @@ const HeroSection = () => {
       });
       setSubmitStatus({
         type: "success",
-        text: activeTab === "customer" ? "Inspection request sent!" : "Sign up successful!",
+        text: activeTab === "customer" ? "Inspection request sent! We will contact you shortly." : "Thank you for signing up! We will contact you shortly.",
       });
       setEmailValue("");
       setPhoneNumberValue("");
