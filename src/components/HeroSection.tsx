@@ -121,7 +121,7 @@ const HeroSection = () => {
         {/* Right — sign-up form */}
         <div
           id="signup"
-          className="flex flex-col gap-4 rounded-lg bg-white p-6 shadow-form sm:p-8 lg:flex-1"
+          className="scroll-mt-24 flex flex-col gap-4 rounded-lg bg-white p-6 shadow-form sm:p-8 lg:flex-1"
         >
           {/* Segmented control */}
           <div className="flex self-center rounded-full bg-ing-neutral p-2">

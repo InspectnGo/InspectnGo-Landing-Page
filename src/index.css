@@ -54,6 +54,7 @@
     @apply border-border;
   }
   html {
+    scroll-behavior: smooth;
     overscroll-behavior: none;
     height: 100%;
   }
