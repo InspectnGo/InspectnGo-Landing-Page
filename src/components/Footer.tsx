@@ -39,8 +39,8 @@ const Footer = () => {
             >
               About
             </Link>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
 
         {/* Divider */}
         <div className="h-px w-full bg-white/20" />
