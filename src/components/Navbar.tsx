@@ -19,7 +19,7 @@ const Navbar = () => {
 
           {/* Desktop nav */}
           <div className="hidden items-center gap-6 md:flex">
-            <Link
+            {/* <Link
               to="/partners"
               className="font-manrope text-lg tracking-[-0.24px] text-ing-body hover:text-ing-heading transition-colors"
             >
@@ -30,7 +30,7 @@ const Navbar = () => {
               className="font-manrope text-lg tracking-[-0.24px] text-ing-body hover:text-ing-heading transition-colors"
             >
               About
-            </Link>
+            </Link> */}
             <a
               href="#signup"
               className="inline-flex min-w-[120px] items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold tracking-[-0.24px] text-ing-body hover:brightness-90 transition"

@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-1 flex-col gap-3">
+          {/* <div className="flex flex-1 flex-col gap-3">
             <h3 className="font-heading text-[32px] leading-none tracking-[-0.64px] text-white">
               About us
             </h3>
@@ -40,7 +40,7 @@ const Footer = () => {
               About
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* Divider */}
         <div className="h-px w-full bg-white/20" />
