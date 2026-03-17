@@ -12,9 +12,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="shrink-0 py-2 font-sans text-3xl font-bold tracking-tight text-ing-heading"
+            className="shrink-0 py-2"
           >
-            InspectnGO
+            <img src="/inspectnGO-logo-dark.svg" alt="InspectnGO" className="h-13 w-auto" />
           </Link>
 
           {/* Desktop nav */}
@@ -57,10 +57,10 @@ const Navbar = () => {
           <div className="flex items-center justify-between px-6 py-3 shadow-form">
             <Link
               to="/"
-              className="shrink-0 py-2 font-sans text-3xl font-bold tracking-tight text-ing-heading"
+              className="shrink-0 py-2"
               onClick={() => setMobileOpen(false)}
             >
-              InspectnGO
+              <img src="/inspectnGO-logo-dark.svg" alt="InspectnGO" className="h-15 w-auto" />
             </Link>
             <button
               className="p-2 text-ing-body"

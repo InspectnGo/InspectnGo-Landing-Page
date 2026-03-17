@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="flex flex-col gap-8 sm:flex-row sm:items-start">
           {/* Brand */}
           <div className="flex flex-1 flex-col gap-4">
-            <div className="p-2 font-sans text-3xl font-bold tracking-tight text-white">
-              InspectnGO
+            <div className="p-2">
+              <img src="/inspectnGO-logo-white.svg" alt="InspectnGO" className="h-20 w-auto" />
             </div>
             <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
               Affordable and fast vehicle inspections done right.
