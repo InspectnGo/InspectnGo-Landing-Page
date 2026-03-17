@@ -52,7 +52,7 @@ const FAQSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             Frequently Asked Questions
           </p>
-          <h2 className="font-heading text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading text-3xl font-bold tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
             Built with the best in the industry
           </h2>
           <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
@@ -70,7 +70,7 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="border-b border-ing-border"
               >
-                <AccordionTrigger className="py-4 font-manrope text-base font-normal tracking-[-0.64px] text-ing-heading hover:no-underline sm:text-xl lg:text-2xl lg:leading-[1.25]">
+                <AccordionTrigger className="py-4 font-manrope text-base font-medium tracking-[-0.64px] text-ing-heading hover:no-underline sm:text-xl lg:text-2xl lg:leading-[1.25]">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">

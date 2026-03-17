@@ -358,7 +358,7 @@ const InspectionSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             Vehicle Checkpoints
           </p>
-          <h2 className="font-heading text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
+          <h2 className="font-heading font-bold text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
             What's Included in the Inspection
           </h2>
           <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">

@@ -13,7 +13,7 @@ const StatCard = ({ stat, subHeading, description, inView }: StatCardProps) => {
 
   return (
     <div className="flex flex-1 flex-col items-center gap-[18px] rounded-2xl border border-ing-border bg-white px-6 py-8 text-center shadow-form min-w-[200px]">
-      <p className="font-heading text-[48px] leading-none tracking-[-0.64px] text-ing-body">
+      <p className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-body">
         {animatedValue}
       </p>
       <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-heading">
@@ -52,7 +52,7 @@ const StatsSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             Why Pre-Purchase Inspection Matters
           </p>
-          <h2 className="font-heading text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading text-3xl font-bold tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
             The used-car market is massive and risky
           </h2>
           <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">

@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex flex-1 flex-col gap-3">
-            <h3 className="font-heading text-[32px] leading-none tracking-[-0.64px] text-white">
+            <h3 className="font-heading font-bold text-[32px] leading-none tracking-[-0.64px] text-white">
               About us
             </h3>
             <Link
