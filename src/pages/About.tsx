@@ -35,7 +35,7 @@ const teamMembers: TeamMember[] = [
     name: "Wilson Chieng",
     role: "Chief Executive Officer",
     bio: "Leads InspectnGO with a clear vision to bring transparency and confidence to every vehicle purchase, ensuring every decision puts vehicle buyers first.",
-    image: "",
+    image: "/wilson-chieng.jpeg",
   },
 ];
 
