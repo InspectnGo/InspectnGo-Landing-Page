@@ -11,39 +11,11 @@ interface Partner {
 
 const partners: Partner[] = [
   {
-    name: "CARFAX",
-    logo: "/carfax-logo.png",
-    description:
-      "CARFAX provides comprehensive vehicle history reports that reveal accidents, service records, and ownership details. Their data helps buyers and sellers make transparent, confident decisions in the used-car market.",
-    website: "https://www.carfax.ca",
-  },
-  {
-    name: "British Columbia Institute of Technology",
-    logo: "/bcit-logo.png",
-    description:
-      "British Columbia Institute of Technology trains the next generation of automotive technicians through hands-on, industry-aligned programs. BCIT graduates form the backbone of skilled mechanics across Western Canada.",
-    website: "https://www.bcit.ca",
-  },
-  {
-    name: "Vancouver Community College",
-    logo: "/vcc-logo-dark-green.svg",
-    description:
-      "Vancouver Community College offers accredited automotive service technician programs that blend classroom theory with real-world shop experience, producing job-ready professionals for the local automotive industry.",
-    website: "https://www.vcc.ca",
-  },
-  {
     name: "KMS Tools",
     logo: "/kms-logo.png",
     description:
       "KMS Tools is a leading Canadian retailer of professional-grade automotive tools and equipment, supplying mechanics and shops with the gear they need to perform quality inspections and repairs.",
     website: "https://www.kmstools.com",
-  },
-  {
-    name: "APEX Auto Ltd",
-    logo: "/apex-logo.png",
-    description:
-      "APEX Auto Ltd specializes in automotive parts and service solutions, providing reliable components and expertise that support high-quality vehicle inspections and maintenance.",
-    website: "https://www.apexautoltd.ca",
   },
 ];
 
