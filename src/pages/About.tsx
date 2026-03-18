@@ -118,8 +118,11 @@ const About = () => {
 
             <div className="mt-12 flex justify-center">
               {teamMembers.map((member, index) => (
-                <div key={index} className="max-w-sm text-center">
-                  <div className="mx-auto mb-6 h-48 w-48 overflow-hidden rounded-full bg-[#e6ebf2]">
+                <div
+                  key={index}
+                  className="flex w-full max-w-sm flex-col gap-4 rounded-2xl border border-[#e6ebf2] bg-white px-6 py-6 text-center shadow-form"
+                >
+                  <div className="mx-auto h-48 w-48 overflow-hidden rounded-full bg-[#e6ebf2]">
                     {member.image ? (
                       <img
                         src={member.image}
@@ -135,10 +138,10 @@ const About = () => {
                   <h3 className="font-heading text-[40px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
                     {member.name}
                   </h3>
-                  <p className="mt-2 font-manrope text-sm font-bold uppercase tracking-wide text-ing-body">
+                  <p className="font-manrope text-base font-bold uppercase text-ing-body">
                     {member.role}
                   </p>
-                  <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
+                  <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
                     {member.bio}
                   </p>
                 </div>
