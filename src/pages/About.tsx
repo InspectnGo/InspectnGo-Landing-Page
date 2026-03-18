@@ -27,6 +27,7 @@ interface TeamMember {
   name: string;
   role: string;
   bio: string;
+  image?: string;
 }
 
 const teamMembers: TeamMember[] = [
@@ -34,6 +35,7 @@ const teamMembers: TeamMember[] = [
     name: "Wilson Chieng",
     role: "Chief Executive Officer",
     bio: "Leads InspectnGO with a clear vision to bring transparency and confidence to every vehicle purchase, ensuring every decision puts vehicle buyers first.",
+    image: "",
   },
 ];
 
@@ -114,9 +116,22 @@ const About = () => {
               inspection experience.
             </p>
 
-            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 flex justify-center">
               {teamMembers.map((member, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="max-w-sm text-center">
+                  <div className="mx-auto mb-6 h-48 w-48 overflow-hidden rounded-full bg-[#e6ebf2]">
+                    {member.image ? (
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center">
+                        <Users size={64} className="text-ing-body/40" />
+                      </div>
+                    )}
+                  </div>
                   <h3 className="font-heading text-[40px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
                     {member.name}
                   </h3>
