@@ -25,9 +25,9 @@ const TermsOfUse = () => {
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             InspectnGO provides mobile pre-purchase vehicle inspections performed
-            by independent automotive inspectors. Our service allows customers to
-            request an inspection at the vehicle's current location, such as a
-            private residence, dealership, or parking lot.
+            by independent automotive inspectors. Our service allows customers to 
+            request an inspection at the vehicles current location, providing a 
+            convenient and flexible alternative to visiting a shop
           </p>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             InspectnGO facilitates the booking, coordination, and delivery of
@@ -61,17 +61,7 @@ const TermsOfUse = () => {
 
           {/* 3 */}
           <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            3. Independent Contractors
-          </h2>
-          <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
-            InspectnGO works with independent automotive technicians. These
-            inspectors are not employees of InspectnGO but are vetted
-            professionals performing services through the platform.
-          </p>
-
-          {/* 4 */}
-          <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            4. Customer Responsibilities
+            3. Customer Responsibilities
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             By using InspectnGO, you agree that:
@@ -87,9 +77,9 @@ const TermsOfUse = () => {
             fees.
           </p>
 
-          {/* 5 */}
+          {/* 4 */}
           <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            5. Payment and Fees
+            4. Payment and Fees
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             Inspection fees must be paid at the time of booking unless otherwise
@@ -101,9 +91,9 @@ const TermsOfUse = () => {
             completed.
           </p>
 
-          {/* 6 */}
+          {/* 5 */}
           <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            6. Limitation of Liability
+            5. Limitation of Liability
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             To the fullest extent permitted by law, InspectnGO is not liable for:
@@ -121,18 +111,18 @@ const TermsOfUse = () => {
             inspection service.
           </p>
 
-          {/* 7 */}
+          {/* 6 */}
           <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            7. Changes to Services
+            6. Changes to Services
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             InspectnGO may modify or discontinue services, pricing, or website
             functionality at any time without prior notice.
           </p>
 
-          {/* 8 */}
+          {/* 7 */}
           <h2 className="mt-10 font-manrope text-xl font-bold text-ing-accent">
-            8. Governing Law
+            7. Governing Law
           </h2>
           <p className="mt-3 font-manrope text-base leading-relaxed text-ing-body">
             These Terms are governed by the laws of the Province of British
