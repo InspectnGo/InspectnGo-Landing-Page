@@ -28,10 +28,10 @@ const Footer = () => {
               About us
             </h3>
             <Link
-              to="/partners"
+              to="/network"
               className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
             >
-              Partners
+              Network
             </Link>
             <Link
               to="/about"

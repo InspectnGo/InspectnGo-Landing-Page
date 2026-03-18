@@ -20,10 +20,10 @@ const Navbar = () => {
           {/* Desktop nav */}
           <div className="hidden items-center gap-6 md:flex">
             <Link
-              to="/partners"
+              to="/network"
               className="font-manrope text-lg tracking-[-0.24px] text-ing-body hover:text-ing-heading transition-colors"
             >
-              Partners
+              Network
             </Link>
             <Link
               to="/about"
@@ -75,11 +75,11 @@ const Navbar = () => {
           <div className="flex flex-1 flex-col px-6 py-16">
             <div className="flex flex-1 flex-col gap-6">
               <Link
-                to="/partners"
+                to="/network"
                 className="py-4 font-manrope text-2xl tracking-[-0.64px] text-ing-body"
                 onClick={() => setMobileOpen(false)}
               >
-                Partners
+                Network
               </Link>
               <Link
                 to="/about"
