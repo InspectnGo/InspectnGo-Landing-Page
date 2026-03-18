@@ -48,7 +48,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white">
-            © {new Date().getFullYear()} InspectnGO. All rights reserved.
+            © {new Date().getFullYear()} InspectnGO Automotive Services Inc. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link
