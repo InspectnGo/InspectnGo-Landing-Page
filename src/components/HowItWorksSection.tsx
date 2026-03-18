@@ -12,10 +12,10 @@ interface StepCardProps {
 
 const StepCard = ({ icon: Icon, heading, body }: StepCardProps) => (
   <div className="flex flex-col items-start gap-4">
-    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-ing-brand">
+    <div className="hidden h-14 w-14 items-center justify-center rounded-full bg-ing-brand lg:flex">
       <Icon size={24} className="text-ing-accent" />
     </div>
-    <h3 className="font-heading text-2xl font-bold leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
+    <h3 className="font-heading text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
       {heading}
     </h3>
     <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
@@ -27,13 +27,13 @@ const StepCard = ({ icon: Icon, heading, body }: StepCardProps) => (
 const HowItWorksSection = () => {
   return (
     <section className="bg-ing-neutral py-16">
-      <div className="mx-auto flex max-w-[1184px] flex-col-reverse gap-8 px-6 md:px-8 lg:flex-row lg:items-start">
+      <div className="mx-auto flex max-w-[1184px] flex-col gap-8 px-6 md:px-8 lg:flex-row lg:items-start">
         {/* Image */}
         <div className="flex-1 overflow-hidden rounded-2xl lg:self-stretch">
           <img
             src={mechanicImg}
             alt="Mechanic performing vehicle inspection"
-            className="h-full w-full object-cover aspect-[2/3] lg:aspect-auto"
+            className="h-full w-full object-cover aspect-square lg:aspect-auto"
           />
         </div>
 
@@ -44,7 +44,7 @@ const HowItWorksSection = () => {
             <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
               How to use InspectnGO
             </p>
-            <h2 className="font-heading text-3xl font-bold tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[48px] lg:leading-none">
+            <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
               Book a professional vehicle inspection in a minute
             </h2>
           </div>

@@ -3,7 +3,7 @@ const CTASection = () => {
     <section className="bg-ing-accent py-16">
       <div className="mx-auto flex max-w-[1184px] items-center justify-center px-6 md:px-8">
         <div className="flex max-w-[544px] flex-col items-center gap-4 text-center">
-          <h2 className="font-heading font-bold text-3xl tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading font-bold text-[48px] leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             Still got a question?
           </h2>
           <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">

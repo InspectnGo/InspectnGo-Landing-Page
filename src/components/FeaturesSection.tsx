@@ -30,7 +30,7 @@ const FeaturesSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             What we offer
           </p>
-          <h2 className="font-heading text-3xl font-bold tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             Fast, reliable vehicle inspections
           </h2>
           <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">

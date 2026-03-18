@@ -65,8 +65,8 @@
     @apply bg-ing-neutral text-ing-body font-manrope;
     overscroll-behavior: none;
     height: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
   }
   #root {
     height: 100%;

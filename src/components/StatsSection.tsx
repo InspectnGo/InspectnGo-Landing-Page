@@ -52,7 +52,7 @@ const StatsSection = () => {
           <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-body">
             Why Pre-Purchase Inspection Matters
           </p>
-          <h2 className="font-heading text-3xl font-bold tracking-[-0.64px] text-ing-heading sm:text-4xl lg:text-[64px] lg:leading-none">
+          <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             The used-car market is massive and risky
           </h2>
           <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
@@ -88,7 +88,7 @@ const StatsSection = () => {
         {/* CTA */}
         <a
           href="#signup"
-          className="inline-flex min-w-[120px] items-center justify-center rounded-full bg-ing-brand px-6 py-3 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-accent hover:brightness-90 transition"
+          className="inline-flex w-full min-w-[120px] items-center justify-center rounded-full bg-ing-brand px-6 py-3 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-accent hover:brightness-90 transition md:w-auto"
         >
           Book inspection
         </a>
