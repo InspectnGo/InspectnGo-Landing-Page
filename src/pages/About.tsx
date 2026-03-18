@@ -31,19 +31,9 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "TBD",
+    name: "Wilson Chieng",
     role: "Chief Executive Officer",
-    bio: "A team of automotive and technology professionals who believe every buyer deserves to know exactly what they're paying for — no surprises, no guesswork.",
-  },
-  {
-    name: "TBD",
-    role: "Chief Executive Officer",
-    bio: "A team of automotive and technology professionals who believe every buyer deserves to know exactly what they're paying for — no surprises, no guesswork.",
-  },
-  {
-    name: "TBD",
-    role: "Chief Executive Officer",
-    bio: "A team of automotive and technology professionals who believe every buyer deserves to know exactly what they're paying for — no surprises, no guesswork.",
+    bio: "Leads InspectnGO with a clear vision to bring transparency and confidence to every vehicle purchase, ensuring every decision puts vehicle buyers first.",
   },
 ];
 
@@ -85,7 +75,7 @@ const About = () => {
                 cooperate.
               </p>
               <p className="font-manrope text-base leading-relaxed text-ing-body">
-                So we built InspectnGo — a platform that puts a certified
+                So we built InspectnGO — a platform that puts a certified
                 mechanic at the car's location within hours, delivers a
                 transparent report, and gives buyers the confidence to negotiate
                 fairly or walk away.
