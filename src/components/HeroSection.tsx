@@ -149,12 +149,12 @@ const HeroSection = () => {
 
           {/* Honeypot – invisible to real users, traps bots */}
           <div className="absolute -left-[9999px] h-0 w-0 overflow-hidden" aria-hidden="true">
-            <label htmlFor="hero-name">Name</label>
+            <label htmlFor="company_website">Company Website</label>
             <input
-              id="hero-name"
+              id="company_website"
               type="text"
-              name="name"
-              autoComplete="off"
+              name="company_website"
+              autoComplete="nope"
               tabIndex={-1}
               value={honeypot}
               onChange={(e) => setHoneypot(e.target.value)}
