@@ -9,7 +9,7 @@ const TermsOfUse = () => {
         {/* Hero */}
         <section className="bg-ing-neutral py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
-            <h1 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
+            <h1 className="font-heading text-[40px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
               Terms of Use
             </h1>
           </div>
