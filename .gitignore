@@ -27,3 +27,7 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# AI generated files
+.playwright-mcp
+seo-content
