@@ -1,8 +1,7 @@
 import { MapPin, Truck, FileCheck } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-const mechanicImg =
-  "https://www.figma.com/api/mcp/asset/cb10f12b-c3b2-45c0-9823-0c339ef9f828";
+const mechanicImg = "/mechanic.jpg";
 
 interface StepCardProps {
   icon: LucideIcon;
