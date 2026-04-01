@@ -1,9 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageMeta from "@/components/seo/PageMeta";
 
 const TermsOfUse = () => {
   return (
     <div className="flex min-h-screen flex-col bg-white">
+      <PageMeta
+        title="Terms of Use | InspectnGO"
+        description="InspectnGO's terms of use governing access to our vehicle inspection platform."
+        canonical="https://www.inspectngo.ca/terms"
+      />
       <Navbar />
       <main className="flex-1">
         {/* Hero */}

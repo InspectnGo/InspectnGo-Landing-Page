@@ -52,6 +52,12 @@
   }
 }
 
+@layer components {
+  .text-body {
+    @apply font-manrope text-lg leading-[28px] tracking-[-0.24px] text-ing-body;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

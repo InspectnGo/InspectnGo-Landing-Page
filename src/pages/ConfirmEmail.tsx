@@ -1,5 +1,6 @@
 import { useSearchParams, Link } from "react-router-dom";
 import { MailCheck, Clock, LogIn } from "lucide-react";
+import PageMeta from "@/components/seo/PageMeta";
 
 const ConfirmEmail = () => {
   const [searchParams] = useSearchParams();
@@ -7,6 +8,11 @@ const ConfirmEmail = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-ing-neutral px-6">
+      <PageMeta
+        title="Confirm Your Email | InspectnGO"
+        description="Confirm your InspectnGO email address."
+        noindex
+      />
       <div className="w-full max-w-md rounded-2xl bg-white p-10 text-center shadow-form">
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-ing-accent/10">
           <MailCheck className="h-8 w-8 text-ing-accent" />

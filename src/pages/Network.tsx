@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import PageMeta from "@/components/seo/PageMeta";
 import {
   FileSearch,
   GraduationCap,
@@ -33,6 +33,11 @@ const BenefitCard = ({ icon: Icon, heading, body }: BenefitCardProps) => (
 const Network = () => {
   return (
     <div className="flex min-h-screen flex-col bg-ing-neutral">
+      <PageMeta
+        title="Our Network & Partners | InspectnGO"
+        description="InspectnGO partners with CARFAX, BCIT, VCC, and KMS Tools to deliver trusted pre-purchase vehicle inspections."
+        canonical="https://www.inspectngo.ca/network"
+      />
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
@@ -53,12 +58,12 @@ const Network = () => {
                 and industry organizations. These relationships allow us to enhance both 
                 the customer experience and the opportunities available to our mechanics.
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="/#signup"
                 className="inline-flex items-center justify-center rounded-full bg-ing-brand px-6 py-4 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-accent"
               >
                 Get in touch
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -142,12 +147,12 @@ const Network = () => {
                   space.
                 </p>
               </div>
-              <Link
-                to="/contact"
+              <a
+                href="/#signup"
                 className="inline-flex items-center justify-center rounded-full bg-ing-accent px-6 py-4 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-brand"
               >
                 Get in touch
-              </Link>
+              </a>
             </div>
           </div>
         </section>

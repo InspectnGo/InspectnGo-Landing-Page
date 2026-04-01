@@ -40,6 +40,37 @@ const Footer = () => {
               About
             </Link>
           </div>
+
+          {/* Resources */}
+          <div className="flex flex-1 flex-col gap-3">
+            <h3 className="font-heading font-bold text-[32px] leading-none tracking-[-0.64px] text-white">
+              Resources
+            </h3>
+            <Link
+              to="/pre-purchase-car-inspection-vancouver"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Vancouver Inspections
+            </Link>
+            <Link
+              to="/pre-purchase-car-inspection-burnaby"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Burnaby Inspections
+            </Link>
+            <Link
+              to="/pre-purchase-car-inspection-surrey"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Surrey Inspections
+            </Link>
+            <Link
+              to="/blog/pre-purchase-inspection-cost-bc"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Inspection Costs in BC
+            </Link>
+          </div>
         </div>
 
         {/* Divider */}

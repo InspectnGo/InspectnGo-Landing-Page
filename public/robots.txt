@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /confirm-email
+
+Sitemap: https://www.inspectngo.ca/sitemap.xml

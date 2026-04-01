@@ -32,7 +32,7 @@ const Navbar = () => {
               About
             </Link>
             <a
-              href="#signup"
+              href="/#signup"
               className="inline-flex min-w-[120px] items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold tracking-[-0.24px] text-ing-body hover:brightness-90 transition"
             >
               Sign up
@@ -91,7 +91,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href="#signup"
+              href="/#signup"
               className="inline-flex w-full items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold tracking-[-0.24px] text-ing-body hover:brightness-90 transition"
               onClick={() => setMobileOpen(false)}
             >

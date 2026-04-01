@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageMeta from "@/components/seo/PageMeta";
 import { Target, Wrench, Users } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -42,6 +43,11 @@ const teamMembers: TeamMember[] = [
 const About = () => {
   return (
     <div className="flex min-h-screen flex-col bg-ing-neutral">
+      <PageMeta
+        title="About Us | InspectnGO"
+        description="Learn how InspectnGO brings transparency to used car buying with mobile pre-purchase inspections by certified mechanics in Greater Vancouver."
+        canonical="https://www.inspectngo.ca/about"
+      />
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}

@@ -1,9 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PageMeta from "@/components/seo/PageMeta";
 
 const PrivacyPolicy = () => {
   return (
     <div className="flex min-h-screen flex-col bg-white">
+      <PageMeta
+        title="Privacy Policy | InspectnGO"
+        description="InspectnGO's privacy policy on how we collect, use, and protect your personal information."
+        canonical="https://www.inspectngo.ca/privacy"
+      />
       <Navbar />
       <main className="flex-1">
         {/* Hero */}
