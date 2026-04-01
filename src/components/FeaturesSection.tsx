@@ -15,7 +15,7 @@ const FeatureCard = ({ icon: Icon, heading, body }: FeatureCardProps) => (
     <h3 className="font-heading text-2xl font-bold leading-none tracking-[-0.64px] text-ing-heading sm:text-[32px]">
       {heading}
     </h3>
-    <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+    <p className="text-body">
       {body}
     </p>
   </div>
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
           <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             Fast, reliable vehicle inspections
           </h2>
-          <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             Buying a used vehicle can be uncertain. InspectnGO helps you make
             confident decisions by connecting you with trusted mechanics who
             provide fast, reliable inspections before you commit to a purchase.

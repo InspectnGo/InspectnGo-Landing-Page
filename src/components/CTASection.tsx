@@ -6,7 +6,7 @@ const CTASection = () => {
           <h2 className="font-heading font-bold text-[48px] leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             Still got a question?
           </h2>
-          <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             We collaborate with leading organizations in automotive technology,
             education, and trades to deliver inspections you can trust.
           </p>

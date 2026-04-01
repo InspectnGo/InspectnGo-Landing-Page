@@ -111,7 +111,7 @@ const HeroSection = () => {
             Affordable and fast vehicle inspections done{" "}
             <span className="text-ing-heading underline decoration-ing-accent decoration-[15%] underline-offset-4 decoration-skip-ink-auto">right</span>.
           </h1>
-          <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             Book a trusted mechanic to inspect the vehicle on-site and receive a
             clear, detailed report, so you know exactly what you're buying
             before making the deal.
@@ -254,14 +254,14 @@ const HeroSection = () => {
                 I agree to the{" "}
                 <Link
                   to="/terms"
-                  className="text-ing-heading underline decoration-ing-accent decoration-2 underline-offset-2 decoration-skip-ink-auto hover:brightness-90"
+                  className="link-inline"
                 >
                   Terms of Use
                 </Link>
                 {" "}and{" "} 
                 <Link
                   to="/privacy"
-                  className="text-ing-heading underline decoration-ing-accent decoration-2 underline-offset-2 decoration-skip-ink-auto hover:brightness-90"
+                  className="link-inline"
                 >
                   Privacy Policy
                 </Link>

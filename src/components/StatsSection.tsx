@@ -19,7 +19,7 @@ const StatCard = ({ stat, subHeading, description, inView }: StatCardProps) => {
       <p className="font-manrope text-lg font-bold uppercase tracking-[-0.1px] text-ing-heading">
         {subHeading}
       </p>
-      <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+      <p className="text-body">
         {description}
       </p>
     </div>
@@ -55,7 +55,7 @@ const StatsSection = () => {
           <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             The used-car market is massive and risky
           </h2>
-          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             Millions of vehicles are sold every year without a professional
             check.
             <br />A quick inspection protects your wallet, your safety, and

@@ -15,7 +15,7 @@ const Footer = () => {
               Affordable and fast vehicle inspections done right.
             </p>
             <a
-              href="#signup"
+              href="/#signup"
               className="inline-flex w-fit items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold leading-[24px] tracking-[-0.24px] text-ing-body hover:brightness-90 transition"
             >
               Sign up now

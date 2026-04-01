@@ -56,6 +56,11 @@
   .text-body {
     @apply font-manrope text-lg leading-[28px] tracking-[-0.24px] text-ing-body;
   }
+
+  .link-inline {
+    @apply text-ing-heading underline decoration-ing-accent decoration-2 underline-offset-2 hover:brightness-90;
+    text-decoration-skip-ink: auto;
+  }
 }
 
 @layer base {

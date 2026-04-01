@@ -361,12 +361,12 @@ const InspectionSection = () => {
           <h2 className="font-heading font-bold text-[48px] leading-none tracking-[-0.64px] text-ing-heading">
             What's Included in the Inspection
           </h2>
-          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             From major mechanical systems to important safety features, each
             inspection is designed to identify potential issues and give you a
             clearer picture of the vehicle's overall health.
           </p>
-          <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             Explore the vehicle below to see some of the key areas our mechanics
             check during an inspection.
           </p>

@@ -78,7 +78,7 @@ const BlogPostLayout = ({
         {/* Article body */}
         <section className="bg-white py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
-            <article className="prose prose-lg max-w-3xl prose-headings:font-heading prose-headings:text-ing-heading prose-p:font-manrope prose-p:text-ing-body prose-li:font-manrope prose-li:text-ing-body prose-strong:text-ing-heading prose-a:text-ing-accent prose-a:no-underline hover:prose-a:underline">
+            <article className="prose prose-lg max-w-3xl prose-headings:font-heading prose-headings:text-ing-heading prose-p:font-manrope prose-p:text-ing-body prose-li:font-manrope prose-li:text-ing-body prose-strong:text-ing-heading prose-a:text-ing-heading prose-a:underline prose-a:decoration-ing-accent prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:brightness-90">
               {children}
             </article>
           </div>
@@ -91,7 +91,7 @@ const BlogPostLayout = ({
               <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
                 Get your inspection booked
               </h2>
-              <p className="max-w-2xl font-manrope text-lg leading-[28px] tracking-[-0.24px] text-ing-body">
+              <p className="max-w-2xl text-body">
                 Don't risk buying a vehicle with hidden problems. Book a professional
                 pre-purchase inspection today and buy with confidence.
               </p>

@@ -24,7 +24,7 @@ const BenefitCard = ({ icon: Icon, heading, body }: BenefitCardProps) => (
     <h3 className="mb-3 font-heading text-2xl font-bold leading-none tracking-[-0.64px] text-ing-heading">
       {heading}
     </h3>
-    <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+    <p className="text-body">
       {body}
     </p>
   </div>
@@ -52,7 +52,7 @@ const Network = () => {
                   Our Network
                 </h1>
               </div>
-              <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+              <p className="text-body">
                 InspectnGo is committed to delivering a reliable and high-quality
                 experience by working closely with established tools, resources,
                 and industry organizations. These relationships allow us to enhance both 
@@ -122,7 +122,7 @@ const Network = () => {
               <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
                 Our Commitment
               </h2>
-              <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <p className="text-body">
                 InspectnGo is focused on building a strong, connected ecosystem
                 that supports transparency for customers and meaningful
                 opportunities for both mechanics and consumers. As we grow, we
@@ -141,7 +141,7 @@ const Network = () => {
                 <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
                   Want to join our network?
                 </h2>
-                <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+                <p className="text-body">
                   We're always looking to work with organizations that share our
                   commitment to transparency and quality in the automotive
                   space.

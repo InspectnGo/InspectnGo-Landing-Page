@@ -27,7 +27,7 @@ const TermsOfUse = () => {
             <p className="font-manrope text-base font-bold uppercase text-ing-body">
               Effective Date as of: March 10th, 2026
             </p>
-            <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+            <p className="text-body">
               Welcome to InspectnGO. By accessing or using our website, services,
               or booking platform, you agree to the following Terms of Use.
             </p>
@@ -37,7 +37,7 @@ const TermsOfUse = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 1. Service Description
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   InspectnGO provides mobile pre-purchase vehicle inspections
                   performed by independent automotive inspectors. Our service
@@ -57,7 +57,7 @@ const TermsOfUse = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 2. Inspection Disclaimer
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   Vehicle inspections are visual and non-invasive assessments
                   performed at the time of inspection. InspectnGO and its
@@ -87,7 +87,7 @@ const TermsOfUse = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 3. Independent Contractors
               </h2>
-              <div className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="text-body">
                 <p>
                   InspectnGO works with independent automotive technicians. These
                   inspectors are not employees of InspectnGO but are vetted
@@ -101,7 +101,7 @@ const TermsOfUse = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 4. Customer Responsibilities
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>By using InspectnGO, you agree that:</p>
                 <ul className="list-disc pl-6">
                   <li>You have permission to have the vehicle inspected</li>
@@ -121,7 +121,7 @@ const TermsOfUse = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 5. Payment and Fees
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   Inspection fees must be paid at the time of booking unless
                   otherwise specified. Pricing may vary depending on location,

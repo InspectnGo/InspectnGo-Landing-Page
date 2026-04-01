@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
             <p className="font-manrope text-base font-bold uppercase text-ing-body">
               Effective Date as of: March 10th, 2026
             </p>
-            <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+            <p className="text-body">
               InspectnGO respects your privacy and is committed to protecting
               your personal information.
             </p>
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 1. Information We Collect
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   When you use our website or book an inspection, we may collect
                   the following information:
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 2. How We Use Your Information
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>Your information may be used to:</p>
                 <ul className="list-disc pl-6">
                   <li>Schedule and coordinate vehicle inspections</li>
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 3. Sharing of Information
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>Your information may be shared with:</p>
                 <ul className="list-disc pl-6">
                   <li>
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 4. Data Security
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   InspectnGO takes reasonable steps to protect your information
                   from unauthorized access, loss, or misuse.
@@ -125,7 +125,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 5. Consent
               </h2>
-              <div className="space-y-1 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="space-y-1 text-body">
                 <p>
                   By submitting your information through the InspectnGO website,
                   you consent to:
@@ -151,7 +151,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 6. Access to Your Information
               </h2>
-              <div className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="text-body">
                 <p>
                   You may request to access, update, or delete your personal
                   information by contacting us.
@@ -164,7 +164,7 @@ const PrivacyPolicy = () => {
               <h2 className="font-manrope text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
                 7. Contact Information
               </h2>
-              <div className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+              <div className="text-body">
                 <p className="mb-1">
                   If you have questions regarding this Privacy Policy, please
                   contact:

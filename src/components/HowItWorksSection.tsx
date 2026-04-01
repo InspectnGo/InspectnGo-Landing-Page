@@ -17,7 +17,7 @@ const StepCard = ({ icon: Icon, heading, body }: StepCardProps) => (
     <h3 className="font-heading text-[32px] font-bold leading-[1.25] tracking-[-0.64px] text-ing-heading">
       {heading}
     </h3>
-    <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+    <p className="text-body">
       {body}
     </p>
   </div>

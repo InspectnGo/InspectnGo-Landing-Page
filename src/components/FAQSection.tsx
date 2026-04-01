@@ -18,7 +18,7 @@ const FAQSection = () => {
           <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
             Built with the best in the industry
           </h2>
-          <p className="font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+          <p className="text-body">
             We collaborate with leading organizations in automotive technology,
             education, and trades to deliver inspections you can trust.
           </p>
@@ -36,7 +36,7 @@ const FAQSection = () => {
                 <AccordionTrigger className="py-4 font-manrope text-2xl font-medium leading-[1.25] tracking-[-0.64px] text-ing-heading hover:no-underline">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+                <AccordionContent className="text-body">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

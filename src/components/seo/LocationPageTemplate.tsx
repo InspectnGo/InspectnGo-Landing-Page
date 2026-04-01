@@ -83,7 +83,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
               <h1 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading">
                 {data.heroHeading}
               </h1>
-              <p className="font-manrope text-lg leading-[28px] tracking-[-0.24px] text-ing-body">
+              <p className="text-body">
                 {data.heroSubtext}
               </p>
               <a
@@ -106,7 +106,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
               {data.whyContent.map((paragraph, i) => (
                 <p
                   key={i}
-                  className="font-manrope text-lg leading-[28px] text-ing-body"
+                  className="text-body"
                 >
                   {paragraph}
                 </p>
@@ -156,7 +156,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
                   {inspectionIncludes.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle size={20} className="mt-0.5 flex-shrink-0 text-ing-accent" />
-                      <span className="font-manrope text-lg leading-[28px] text-ing-body">
+                      <span className="text-body">
                         {item}
                       </span>
                     </li>
@@ -190,7 +190,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
                       <AccordionTrigger className="py-4 font-manrope text-2xl font-medium leading-[1.25] tracking-[-0.64px] text-ing-heading hover:no-underline">
                         {item.question}
                       </AccordionTrigger>
-                      <AccordionContent className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+                      <AccordionContent className="text-body">
                         {item.answer}
                       </AccordionContent>
                     </AccordionItem>
@@ -207,7 +207,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
             <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
               Also serving nearby areas
             </h2>
-            <p className="mt-4 font-manrope text-lg leading-[28px] text-ing-body">
+            <p className="mt-4 text-body">
               InspectnGO provides mobile pre-purchase vehicle inspections across the Greater Vancouver area.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -233,7 +233,7 @@ const LocationPageTemplate = ({ data }: { data: LocationPageData }) => {
               <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
                 Ready to book your inspection?
               </h2>
-              <p className="max-w-2xl font-manrope text-lg leading-[28px] tracking-[-0.24px] text-ing-body">
+              <p className="max-w-2xl text-body">
                 Don't risk buying a vehicle with hidden problems. Book a professional
                 pre-purchase inspection in {data.city} today and buy with confidence.
               </p>

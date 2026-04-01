@@ -18,7 +18,7 @@ const ValueCard = ({ icon: Icon, heading, body }: ValueCardProps) => (
     <h3 className="font-heading text-2xl font-bold leading-none tracking-[-0.64px] text-ing-heading">
       {heading}
     </h3>
-    <p className="mt-3 font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+    <p className="mt-3 text-body">
       {body}
     </p>
   </div>
@@ -69,20 +69,20 @@ const About = () => {
               Our story
             </h2>
             <div className="mt-8 max-w-3xl space-y-4">
-              <p className="font-manrope text-base leading-relaxed text-ing-body">
+              <p className="text-body">
                 It started the way most good ideas do — with frustration. One of
                 our founders bought a used car that looked perfect on the outside
                 but hid thousands of dollars in mechanical issues underneath. The
                 experience was stressful, expensive, and entirely avoidable.
               </p>
-              <p className="font-manrope text-base leading-relaxed text-ing-body">
+              <p className="text-body">
                 That moment sparked a question: why is it so hard to get a
                 professional inspection before you buy? The answer was clear —
                 the industry hadn't caught up. Booking an inspection meant
                 calling around, waiting days, and hoping the seller would
                 cooperate.
               </p>
-              <p className="font-manrope text-base leading-relaxed text-ing-body">
+              <p className="text-body">
                 So we built InspectnGO — a platform that puts a certified
                 mechanic at the car's location within hours, delivers a
                 transparent report, and gives buyers the confidence to negotiate
@@ -117,7 +117,7 @@ const About = () => {
             <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
               Meet the people behind it
             </h2>
-            <p className="mt-4 max-w-2xl font-manrope text-lg leading-[24px] tracking-[-0.24px] text-ing-body">
+            <p className="mt-4 max-w-2xl text-body">
               A small, focused team committed to transforming the used-car
               inspection experience.
             </p>
@@ -147,7 +147,7 @@ const About = () => {
                   <p className="font-manrope text-base font-bold uppercase text-ing-body">
                     {member.role}
                   </p>
-                  <p className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-ing-body">
+                  <p className="text-body">
                     {member.bio}
                   </p>
                 </div>
