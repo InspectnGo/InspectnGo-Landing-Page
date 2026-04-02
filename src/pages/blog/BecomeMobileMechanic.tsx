@@ -264,10 +264,10 @@ const BecomeMobileMechanic = () => (
         Click the <strong>"Mechanic"</strong> tab in the signup form
       </li>
       <li>
-        Fill in your details — name, email, phone, and certification info
+        Fill in your details — email and phone number for contact
       </li>
       <li>
-        We'll review your application and reach out to get you set up
+        We'll reach out shortly to get you set up
       </li>
     </ol>
     <p>
