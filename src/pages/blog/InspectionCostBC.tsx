@@ -7,7 +7,7 @@ const InspectionCostBC = () => (
     metaTitle="Pre-Purchase Inspection Cost in BC (2026) | InspectnGO"
     metaDescription="How much does a pre-purchase vehicle inspection cost in British Columbia? Compare prices for mobile and shop inspections. InspectnGO: from $220."
     slug="blog/pre-purchase-inspection-cost-bc"
-    publishDate="2026-03-12"
+    publishDate="2026-04-01"
     readingTime="5 min read"
   >
     <p>

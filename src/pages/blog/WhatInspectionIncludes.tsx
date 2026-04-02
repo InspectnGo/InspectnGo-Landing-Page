@@ -7,7 +7,7 @@ const WhatInspectionIncludes = () => (
     metaTitle="What Does a Pre-Purchase Inspection Include? | InspectnGO"
     metaDescription="A complete breakdown of every checkpoint in a pre-purchase vehicle inspection — brakes, tires, fluids, suspension, engine, and more. See exactly what InspectnGO's mechanics check."
     slug="blog/what-does-pre-purchase-inspection-include"
-    publishDate="2026-04-01"
+    publishDate="2026-03-29"
     readingTime="8 min read"
   >
     <p>

@@ -5,44 +5,20 @@ import PageMeta from "@/components/seo/PageMeta";
 
 const posts = [
   {
-    title: "How to Buy a Used Car in BC: The Complete Guide",
+    title: "How Much Does a Pre-Purchase Inspection Cost in BC? (2026)",
     description:
-      "Step-by-step guide to buying a used car in British Columbia — from setting your budget to transferring ownership.",
-    slug: "/blog/how-to-buy-a-used-car-in-bc",
-    date: "2026-03-13",
-    readingTime: "12 min read",
-  },
-  {
-    title: "Buying a Used Car from a Private Seller in BC: What You Need to Know",
-    description:
-      "Everything you need to know about buying from a private seller — paperwork, taxes, scam red flags, and how to protect yourself.",
-    slug: "/blog/buying-used-car-private-seller-bc",
-    date: "2026-03-23",
-    readingTime: "10 min read",
+      "Compare prices for mobile and shop-based pre-purchase vehicle inspections across British Columbia.",
+    slug: "/blog/pre-purchase-inspection-cost-bc",
+    date: "2026-04-01",
+    readingTime: "5 min read",
   },
   {
     title: "What Does a Pre-Purchase Inspection Include? (Complete Breakdown)",
     description:
       "A complete breakdown of every checkpoint in a pre-purchase vehicle inspection — brakes, tires, fluids, suspension, engine, and more.",
     slug: "/blog/what-does-pre-purchase-inspection-include",
-    date: "2026-04-01",
+    date: "2026-03-29",
     readingTime: "8 min read",
-  },
-  {
-    title: "How to Negotiate a Used Car Price After an Inspection Report",
-    description:
-      "Learn how to use a pre-purchase inspection report to negotiate a lower price on a used car with real examples and repair cost estimates.",
-    slug: "/blog/negotiate-used-car-price-after-inspection",
-    date: "2026-03-17",
-    readingTime: "7 min read",
-  },
-  {
-    title: "How Much Does a Pre-Purchase Inspection Cost in BC? (2026)",
-    description:
-      "Compare prices for mobile and shop-based pre-purchase vehicle inspections across British Columbia.",
-    slug: "/blog/pre-purchase-inspection-cost-bc",
-    date: "2026-03-12",
-    readingTime: "5 min read",
   },
   {
     title: "Red Seal Mechanic vs Regular Mechanic: What's the Difference?",
@@ -53,12 +29,36 @@ const posts = [
     readingTime: "6 min read",
   },
   {
+    title: "Buying a Used Car from a Private Seller in BC: What You Need to Know",
+    description:
+      "Everything you need to know about buying from a private seller — paperwork, taxes, scam red flags, and how to protect yourself.",
+    slug: "/blog/buying-used-car-private-seller-bc",
+    date: "2026-03-23",
+    readingTime: "10 min read",
+  },
+  {
     title: "Become a Mobile Mechanic with InspectnGO",
     description:
       "Join InspectnGO's network of certified mobile mechanics in Metro Vancouver. Flexible schedule, steady bookings, and no shop overhead.",
     slug: "/blog/become-mobile-mechanic-inspectngo",
     date: "2026-03-20",
     readingTime: "6 min read",
+  },
+  {
+    title: "How to Negotiate a Used Car Price After an Inspection Report",
+    description:
+      "Learn how to use a pre-purchase inspection report to negotiate a lower price on a used car with real examples and repair cost estimates.",
+    slug: "/blog/negotiate-used-car-price-after-inspection",
+    date: "2026-03-17",
+    readingTime: "7 min read",
+  },
+  {
+    title: "How to Buy a Used Car in BC: The Complete Guide",
+    description:
+      "Step-by-step guide to buying a used car in British Columbia — from setting your budget to transferring ownership.",
+    slug: "/blog/how-to-buy-a-used-car-in-bc",
+    date: "2026-03-13",
+    readingTime: "12 min read",
   },
 ];
 
