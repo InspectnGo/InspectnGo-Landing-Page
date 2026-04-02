@@ -39,6 +39,12 @@ const Footer = () => {
             >
               About
             </Link>
+            <Link
+              to="/blog"
+              className="font-manrope text-base leading-[22px] tracking-[-0.24px] text-white hover:underline"
+            >
+              Blog
+            </Link>
           </div>
 
           {/* Resources */}

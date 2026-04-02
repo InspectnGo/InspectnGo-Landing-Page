@@ -31,6 +31,12 @@ const Navbar = () => {
             >
               About
             </Link>
+            <Link
+              to="/blog"
+              className="font-manrope text-lg tracking-[-0.24px] text-ing-body hover:text-ing-heading transition-colors"
+            >
+              Blog
+            </Link>
             <a
               href="/#signup"
               className="inline-flex min-w-[120px] items-center justify-center rounded-full bg-ing-accent px-6 py-3 font-manrope text-lg font-bold tracking-[-0.24px] text-ing-body hover:brightness-90 transition"
@@ -87,6 +93,13 @@ const Navbar = () => {
                 onClick={() => setMobileOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                to="/blog"
+                className="py-4 font-manrope text-2xl tracking-[-0.64px] text-ing-body"
+                onClick={() => setMobileOpen(false)}
+              >
+                Blog
               </Link>
             </div>
 

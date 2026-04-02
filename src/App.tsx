@@ -12,6 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ConfirmEmail from "./pages/ConfirmEmail";
 import About from "./pages/About";
 import Network from "./pages/Network";
+import Blog from "./pages/Blog";
 import Vancouver from "./pages/locations/Vancouver";
 import Burnaby from "./pages/locations/Burnaby";
 import Surrey from "./pages/locations/Surrey";
@@ -28,6 +29,12 @@ import MapleRidge from "./pages/locations/MapleRidge";
 import PittMeadows from "./pages/locations/PittMeadows";
 import WhiteRock from "./pages/locations/WhiteRock";
 import InspectionCostBC from "./pages/blog/InspectionCostBC";
+import WhatInspectionIncludes from "./pages/blog/WhatInspectionIncludes";
+import HowToBuyUsedCarBC from "./pages/blog/HowToBuyUsedCarBC";
+import PrivateSellerBC from "./pages/blog/PrivateSellerBC";
+import RedSealMechanic from "./pages/blog/RedSealMechanic";
+import NegotiateAfterInspection from "./pages/blog/NegotiateAfterInspection";
+import BecomeMobileMechanic from "./pages/blog/BecomeMobileMechanic";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -46,6 +53,7 @@ const App = () => (
           <Route path="/confirm-email" element={<ConfirmEmail />} />
           <Route path="/about" element={<About />} />
           <Route path="/network" element={<Network />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/pre-purchase-car-inspection-vancouver" element={<Vancouver />} />
           <Route path="/pre-purchase-car-inspection-burnaby" element={<Burnaby />} />
           <Route path="/pre-purchase-car-inspection-surrey" element={<Surrey />} />
@@ -62,6 +70,12 @@ const App = () => (
           <Route path="/pre-purchase-car-inspection-pitt-meadows" element={<PittMeadows />} />
           <Route path="/pre-purchase-car-inspection-white-rock" element={<WhiteRock />} />
           <Route path="/blog/pre-purchase-inspection-cost-bc" element={<InspectionCostBC />} />
+          <Route path="/blog/what-does-pre-purchase-inspection-include" element={<WhatInspectionIncludes />} />
+          <Route path="/blog/how-to-buy-a-used-car-in-bc" element={<HowToBuyUsedCarBC />} />
+          <Route path="/blog/buying-used-car-private-seller-bc" element={<PrivateSellerBC />} />
+          <Route path="/blog/red-seal-mechanic-vs-regular-mechanic" element={<RedSealMechanic />} />
+          <Route path="/blog/negotiate-used-car-price-after-inspection" element={<NegotiateAfterInspection />} />
+          <Route path="/blog/become-mobile-mechanic-inspectngo" element={<BecomeMobileMechanic />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
