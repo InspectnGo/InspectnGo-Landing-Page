@@ -68,8 +68,40 @@ const Network = () => {
           </div>
         </section>
 
-        {/* For Customers Section */}
+        {/* Carfax Industry Partner Section */}
         <section className="bg-white py-16">
+          <div className="mx-auto max-w-[1184px] px-6 md:px-8">
+            <div className="flex flex-col items-center gap-10 md:flex-row md:gap-16">
+              <div className="flex shrink-0 items-center justify-center">
+                <img
+                  src="/carfax-med.png"
+                  alt="Carfax"
+                  className="h-12 w-auto md:h-16"
+                />
+              </div>
+              <div className="space-y-6">
+                <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
+                  Our Industry Partner
+                </h2>
+                <p className="text-body">
+                  InspectnGo has partnered with CARFAX Canada to bring you
+                  greater transparency and value with every inspection. Each
+                  inspection includes a complimentary CARFAX vehicle history
+                  report — saving you money and the hassle of sourcing one
+                  yourself.
+                </p>
+                <p className="text-body">
+                  Already have a CARFAX subscription? You can take advantage of
+                  a discounted inspection rate, making it even more affordable to
+                  get the professional pre-purchase inspection you need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* For Customers Section */}
+        <section className="bg-ing-neutral py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
             <h2 className="mb-8 font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
               For Customers
@@ -90,7 +122,7 @@ const Network = () => {
         </section>
 
         {/* For Mechanics Section */}
-        <section className="bg-ing-neutral py-16">
+        <section className="bg-white py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
             <h2 className="mb-8 font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
               For Mechanics
@@ -116,7 +148,7 @@ const Network = () => {
         </section>
 
         {/* Our Commitment Section */}
-        <section className="bg-white py-16">
+        <section className="bg-ing-neutral py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
             <div className="max-w-[736px] space-y-4">
               <h2 className="font-heading text-[48px] font-bold leading-none tracking-[-0.64px] text-ing-heading lg:text-[64px]">
@@ -134,7 +166,7 @@ const Network = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-ing-neutral py-16">
+        <section className="bg-white py-16">
           <div className="mx-auto max-w-[1184px] px-6 md:px-8">
             <div className="space-y-8">
               <div className="space-y-4">
