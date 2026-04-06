@@ -31,3 +31,4 @@ dist-ssr
 # AI generated files
 .playwright-mcp
 seo-content
+.vercel
