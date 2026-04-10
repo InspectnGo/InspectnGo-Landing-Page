@@ -16,6 +16,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.inspectngo.ca/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.inspectngo.ca/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -132,6 +137,11 @@
   </url>
   <url>
     <loc>https://www.inspectngo.ca/blog/become-mobile-mechanic-inspectngo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.inspectngo.ca/blog/best-pre-purchase-inspection-metro-vancouver</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

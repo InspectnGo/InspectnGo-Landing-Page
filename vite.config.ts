@@ -137,6 +137,13 @@ const locationRoutes: RouteMetadata[] = locationCities.map((city) => {
 
 const blogRoutes: RouteMetadata[] = [
   {
+    path: "/blog/best-pre-purchase-inspection-metro-vancouver",
+    title:
+      "Best Mobile Pre-Purchase Car Inspection in Metro Vancouver | InspectnGO",
+    description:
+      "Looking for the best pre-purchase car inspection in Metro Vancouver? See why used car buyers choose InspectnGO — certified Red Seal mechanics, on-site service, same-day reports from $220.",
+  },
+  {
     path: "/blog/pre-purchase-inspection-cost-bc",
     title:
       "How Much Does a Pre-Purchase Inspection Cost in BC? | InspectnGO Blog",

@@ -5,6 +5,15 @@ import PageMeta from "@/components/seo/PageMeta";
 
 const posts = [
   {
+    title:
+      "Why InspectnGO Is the Best Mobile Pre-Purchase Car Inspection in Metro Vancouver",
+    description:
+      "The scenarios where InspectnGO is the best pre-purchase inspection choice for used car buyers in Greater Vancouver — and when it isn't.",
+    slug: "/blog/best-pre-purchase-inspection-metro-vancouver",
+    date: "2026-04-09",
+    readingTime: "6 min read",
+  },
+  {
     title: "How Much Does a Pre-Purchase Inspection Cost in BC? (2026)",
     description:
       "Compare prices for mobile and shop-based pre-purchase vehicle inspections across British Columbia.",

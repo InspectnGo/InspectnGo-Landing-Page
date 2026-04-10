@@ -35,6 +35,7 @@ import PrivateSellerBC from "./pages/blog/PrivateSellerBC";
 import RedSealMechanic from "./pages/blog/RedSealMechanic";
 import NegotiateAfterInspection from "./pages/blog/NegotiateAfterInspection";
 import BecomeMobileMechanic from "./pages/blog/BecomeMobileMechanic";
+import BestForMetroVancouver from "./pages/blog/BestForMetroVancouver";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -76,6 +77,7 @@ const App = () => (
           <Route path="/blog/red-seal-mechanic-vs-regular-mechanic" element={<RedSealMechanic />} />
           <Route path="/blog/negotiate-used-car-price-after-inspection" element={<NegotiateAfterInspection />} />
           <Route path="/blog/become-mobile-mechanic-inspectngo" element={<BecomeMobileMechanic />} />
+          <Route path="/blog/best-pre-purchase-inspection-metro-vancouver" element={<BestForMetroVancouver />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
