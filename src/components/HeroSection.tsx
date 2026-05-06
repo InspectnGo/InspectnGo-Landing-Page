@@ -258,12 +258,19 @@ const HeroSection = () => {
                 >
                   Terms of Use
                 </Link>
-                {" "}and{" "} 
+                {", "}
                 <Link
                   to="/privacy"
                   className="link-inline"
                 >
                   Privacy Policy
+                </Link>
+                {", and "}
+                <Link
+                  to="/disclaimer"
+                  className="link-inline"
+                >
+                  Disclaimer
                 </Link>
                 {" "}and consent to receive emails and text messages from InspectnGO.
                 </span>

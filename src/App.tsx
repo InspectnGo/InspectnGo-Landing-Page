@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import TermsOfUse from "./pages/TermsOfUse";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Disclaimer from "./pages/Disclaimer";
 import ConfirmEmail from "./pages/ConfirmEmail";
 import About from "./pages/About";
 import Network from "./pages/Network";
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/terms" element={<TermsOfUse />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/confirm-email" element={<ConfirmEmail />} />
           <Route path="/about" element={<About />} />
           <Route path="/network" element={<Network />} />

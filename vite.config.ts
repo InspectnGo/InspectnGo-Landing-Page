@@ -219,6 +219,11 @@ const staticRoutes: RouteMetadata[] = [
     title: "Privacy Policy | InspectnGO",
     description: "Privacy policy for InspectnGO services.",
   },
+  {
+    path: "/disclaimer",
+    title: "Disclaimer | InspectnGO",
+    description: "Inspection disclaimer and limitation of liability for InspectnGO services.",
+  },
 ];
 
 const allRoutes = [...staticRoutes, ...locationRoutes, ...blogRoutes];

@@ -31,6 +31,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.inspectngo.ca/disclaimer</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.inspectngo.ca/pre-purchase-car-inspection-vancouver</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>

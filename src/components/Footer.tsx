@@ -100,6 +100,12 @@ const Footer = () => {
             >
               Terms of Use
             </Link>
+            <Link
+              to="/disclaimer"
+              className="font-manrope text-sm text-white hover:underline"
+            >
+              Disclaimer
+            </Link>
           </div>
         </div>
       </div>
